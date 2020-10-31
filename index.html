@@ -113,8 +113,13 @@
         </div>
         <div class="card-body">
           <div class="form-group">
-            <label>價格</label>
+            <label>股票價格</label>
             <input type="number" step="0.01" class="form-control" value="100" id="price" placeholder="100">
+          </div>
+
+          <div class="form-group">
+            <label>張數</label>
+            <input type="number" step="1" class="form-control" value="1" id="sheet" placeholder="100">
           </div>
 
           <div class="form-group">
@@ -206,6 +211,7 @@
     let fee = $('#fee').val();
     let price = $('#price').val();
     let type = $('#type').val();
+    let sheet = parseInt($('#sheet').val()) * 1000;
     let tmpPrice = price;
     let tmpFee = fee;
     let tax = 0;
@@ -232,23 +238,23 @@
       // console.log(price * 1000 * 0.001425 * discount);
       // console.log(tmpPrice * 1000 * 0.001425 * discount);
 
-      let priceFee = Math.floor(price * 1000 * 0.001425 * discount);
+      let priceFee = Math.floor(price * sheet * 0.001425 * discount);
       priceFee = (priceFee < fee) ? parseInt(fee) : priceFee;
-      let tmpPriceFee = Math.floor(tmpPrice * 1000 * 0.001425 * discount);
+      let tmpPriceFee = Math.floor(tmpPrice * sheet * 0.001425 * discount);
       tmpPriceFee = (tmpPriceFee < fee) ? parseInt(fee) : tmpPriceFee;
 
       tmpFee = priceFee + tmpPriceFee;
 
       if (type == 'buy') {
-        tax = Math.floor(tmpPrice * 1000 * 0.0015);
+        tax = Math.floor(tmpPrice * sheet * 0.0015);
       } else if (type == 'sell') {
-        tax = Math.floor(price * 1000 * 0.0015);
+        tax = Math.floor(price * sheet * 0.0015);
       }
 
       if (type == 'buy') {
-        balance = Math.round(tmpPrice * 1000) - Math.round(price * 1000) - tmpFee - tax;
+        balance = Math.round(tmpPrice * sheet) - Math.round(price * sheet) - tmpFee - tax;
       } else if (type == 'sell') {
-        balance = Math.round(price * 1000) - Math.round(tmpPrice * 1000) - tmpFee - tax;
+        balance = Math.round(price * sheet) - Math.round(tmpPrice * sheet) - tmpFee - tax;
       }
       
       list += `
