@@ -98,6 +98,7 @@ function alertConfirm(tmpPrice) {
 
     if (type == 'buy') {
         content = `
+            <div class="rounded text-center" style="background:#dc3545;color:#fff">買 入</div>
             <table>
                 <tr>
                     <td>持有成本</td>
@@ -108,9 +109,8 @@ function alertConfirm(tmpPrice) {
                     <td>：${formatNumber(priceFee)}</td>
                 </tr>
             </table>
-
-            <hr />
-
+            <br />
+            <div class="rounded text-center" style="background:#28a745;color:#fff">賣 出</div>
             <table>
                 <tr>
                     <td>沖銷金額</td>
@@ -141,6 +141,7 @@ function alertConfirm(tmpPrice) {
         `;
     } else if (type= 'sell') {
         content = `
+            <div class="rounded text-center" style="background:#28a745;color:#fff">賣 出</div>
             <table>
                 <tr>
                     <td>持有成本</td>
@@ -155,9 +156,8 @@ function alertConfirm(tmpPrice) {
                     <td>：${formatNumber(tax)}</td>
                 </tr>
             </table>
-
-            <hr />
-
+            <br />
+            <div class="rounded text-center" style="background:#dc3545;color:#fff">買 入 - 回補</div>
             <table>
                 <tr>
                     <td>沖銷金額</td>
