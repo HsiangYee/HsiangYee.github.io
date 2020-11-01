@@ -316,6 +316,7 @@ function roundDecimal (val, precision) {
 
 
 function formatNumber(number) {
+    console.log(number);
     var num = number.toString();
     var pattern = /(-?\d+)(\d{3})/;
       
@@ -335,7 +336,7 @@ function formatPoint (price) {
         return price.toFixed(1);
     }
 
-    if (price >= 500 && price > 1000){
+    if (price >= 500){
         return price.toFixed(0);
     }
 }
