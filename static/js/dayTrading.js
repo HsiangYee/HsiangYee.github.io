@@ -94,8 +94,6 @@ function alertConfirm(tmpPrice) {
         rate = reateColoring(rate);
     }
 
-    console.log(price);
-
     if (type == 'buy') {
         content = `
             <div class="rounded text-center" style="background:#dc3545;color:#fff">買 入</div>
