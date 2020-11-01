@@ -79,23 +79,22 @@ function alertConfirm(tmpPrice) {
     let tmpPriceFee = Math.floor(tmpPrice * sheet * 0.001425 * discount);
     tmpPriceFee = (tmpPriceFee < fee) ? fee : tmpPriceFee;
 
-    // tmpFee = priceFee + tmpPriceFee;
+    tmpFee = priceFee + tmpPriceFee;
 
     // 損益試算, tax 證交稅
     if (type == 'buy') {
         tax = Math.floor(tmpPrice * sheet * 0.0015);
         balance = Math.round(tmpPrice * sheet) - Math.round(price * sheet) - tmpFee - tax;
-        console.log(balance);
         rate = ((balance / (Math.round(price * sheet) + tmpFee + tax)) * 100).toFixed(2);
         rate = reateColoring(rate);
     } else if (type == 'sell') {
         tax = Math.floor(price * sheet * 0.0015);
         balance = Math.round(price * sheet) - Math.round(tmpPrice * sheet) - tmpFee - tax;
-        console.log(balance);
-        console.log(balance);
         rate = ((balance / Math.round(tmpPrice * sheet)) * 100).toFixed(2);
         rate = reateColoring(rate);
     }
+
+    console.log(price);
 
     if (type == 'buy') {
         content = `
@@ -316,7 +315,6 @@ function roundDecimal (val, precision) {
 
 
 function formatNumber(number) {
-    console.log(number);
     var num = number.toString();
     var pattern = /(-?\d+)(\d{3})/;
       
