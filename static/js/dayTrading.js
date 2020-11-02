@@ -1,4 +1,5 @@
 let discount;
+let discountType;
 let fee;
 let price;
 let type;
@@ -7,6 +8,8 @@ let list = $('#list');
 
 // 手續費
 let priceFee;
+let originPriceFee;
+let monthPriceDiscount;
 
 // 最上面 tick , 最下面 tick
 let topNumber;
@@ -76,8 +79,11 @@ function alertConfirm(tmpPrice) {
     let rate;
 
     // 手續費試算
+    let originTmpPriceFee = Math.floor(tmpPrice * sheet * 0.001425);
     let tmpPriceFee = Math.floor(tmpPrice * sheet * 0.001425 * discount);
     tmpPriceFee = (tmpPriceFee < fee) ? fee : tmpPriceFee;
+    let monthTmpPriceDiscount = Math.floor(tmpPrice * sheet * 0.001425 * (1 - discount));
+    monthTmpPriceDiscount = (tmpPriceFee <= fee) ? 0 : monthTmpPriceDiscount;
 
     tmpFee = priceFee + tmpPriceFee;
 
@@ -95,48 +101,98 @@ function alertConfirm(tmpPrice) {
     }
 
     if (type == 'buy') {
-        content = `
-            <div class="rounded text-center" style="background:#dc3545;color:#fff">買 入</div>
-            <table>
-                <tr>
-                    <td>持有成本</td>
-                    <td>：${formatNumber(formatPoint(price * sheet))}</td>
-                </tr>
-                <tr>
-                    <td>手續費</td>
-                    <td>：${formatNumber(priceFee)}</td>
-                </tr>
-            </table>
-            <br />
-            <div class="rounded text-center" style="background:#28a745;color:#fff">賣 出</div>
-            <table>
-                <tr>
-                    <td>沖銷金額</td>
-                    <td>：${formatNumber(formatPoint(tmpPrice * sheet))}</td>
-                </tr>
-                <tr>
-                    <td>手續費</td>
-                    <td>：${formatNumber(tmpPriceFee)}</td>
-                </tr>
-                <tr>
-                    <td>證交稅</td>
-                    <td>：${formatNumber(tax)}</td>
-                </tr>
-            </table>
+        if (discountType == 'day') {
+            content = `
+                <div class="rounded text-center" style="background:#dc3545;color:#fff">買 入</div>
+                <table>
+                    <tr>
+                        <td>持有成本</td>
+                        <td>：${formatNumber(formatPoint(price * sheet))}</td>
+                    </tr>
+                    <tr>
+                        <td>手續費</td>
+                        <td>：${formatNumber(priceFee)}</td>
+                    </tr>
+                </table>
+                <br />
+                <div class="rounded text-center" style="background:#28a745;color:#fff">賣 出</div>
+                <table>
+                    <tr>
+                        <td>沖銷金額</td>
+                        <td>：${formatNumber(formatPoint(tmpPrice * sheet))}</td>
+                    </tr>
+                    <tr>
+                        <td>手續費</td>
+                        <td>：${formatNumber(tmpPriceFee)}</td>
+                    </tr>
+                    <tr>
+                        <td>證交稅</td>
+                        <td>：${formatNumber(tax)}</td>
+                    </tr>
+                </table>
 
-            <hr />
+                <hr />
 
-            <table>
-                <tr>
-                    <td>報酬率</td>
-                    <td>：${rate}</td>
-                </tr>
-                <tr>
-                    <td>損益</td>
-                    <td>：${coloring(formatNumber(balance))}</td>
-                </tr>
-            </table>
-        `;
+                <table>
+                    <tr>
+                        <td>報酬率</td>
+                        <td>：${rate}</td>
+                    </tr>
+                    <tr>
+                        <td>損益</td>
+                        <td>：${coloring(formatNumber(balance))}</td>
+                    </tr>
+                </table>
+            `;
+        } else if (discountType == 'month') {
+            content = `
+                <div class="rounded text-center" style="background:#dc3545;color:#fff">買 入</div>
+                    <table>
+                        <tr>
+                            <td>持有成本</td>
+                            <td>：${formatNumber(formatPoint(price * sheet))}</td>
+                        </tr>
+                        <tr>
+                            <td>手續費</td>
+                            <td>：${formatNumber(originPriceFee)}</td>
+                        </tr>
+                    </table>
+                    <br />
+                    <div class="rounded text-center" style="background:#28a745;color:#fff">賣 出</div>
+                    <table>
+                        <tr>
+                            <td>沖銷金額</td>
+                            <td>：${formatNumber(formatPoint(tmpPrice * sheet))}</td>
+                        </tr>
+                        <tr>
+                            <td>手續費</td>
+                            <td>：${formatNumber(originTmpPriceFee)}</td>
+                        </tr>
+                        <tr>
+                            <td>證交稅</td>
+                            <td>：${formatNumber(tax)}</td>
+                        </tr>
+                    </table>
+
+                    <hr />
+
+                    <table>
+                        <tr>
+                            <td>折讓金額</td>
+                            <td>：${formatNumber(monthPriceDiscount + monthTmpPriceDiscount)}</td>
+                        </tr>
+                        <tr>
+                            <td>報酬率</td>
+                            <td>：${rate}</td>
+                        </tr>
+                        <tr>
+                            <td>損益</td>
+                            <td>：${coloring(formatNumber(balance))}</td>
+                        </tr>
+                    </table>
+                `;
+        }
+        
     } else if (type= 'sell') {
         content = `
             <div class="rounded text-center" style="background:#28a745;color:#fff">賣 出</div>
@@ -229,6 +285,7 @@ function showMoreDown() {
 
 function search() {
     discount = roundDecimal(($('#discount').val() / 10), 2);
+    discountType = $('#discountType').val();
     fee = parseInt($('#fee').val());
     price = parseFloat($('#price').val());
     type = $('#type').val();
@@ -236,6 +293,12 @@ function search() {
 
     priceFee = Math.floor(price * sheet * 0.001425 * discount);
     priceFee = (priceFee < fee) ? fee : priceFee;
+
+    originPriceFee = Math.floor(price * sheet * 0.001425);
+    originPriceFee = (originPriceFee < fee) ? fee : originPriceFee;
+
+    monthPriceDiscount = Math.floor(price * sheet * 0.001425 * (1 - discount));
+    monthPriceDiscount = (priceFee <= fee) ? 0 : monthPriceDiscount;
 
     topNumber = price;
     downNumber = price;
@@ -357,14 +420,32 @@ search()
 
 
 function discountQuestion () {
+    let content = `
+        打 6 折請填 6 <br />
+        打 28 折請填 2.8 <br />
+        以此類推 <br />
+    `;
     $.confirm({
         title: '如何填寫?',
         type: 'blue',
-        content: `
-            打 6 折請填 6 <br />
-            打 28 折請填 2.8 <br />
-            以此類推 <br />
-        `,
+        content: content,
+        buttons: {
+            cancel: {
+                text: '關 閉',
+            }
+        }
+    });
+}
+
+function discountTypeQuestion () {
+    let content = `
+        日退 - 手續費會直接扣除折讓金額 <br />
+        月退 - 手續費不會扣除折讓金額，並另外顯示月退金額 <br />
+    `;
+    $.confirm({
+        title: '如何填寫?',
+        type: 'blue',
+        content: content,
         buttons: {
             cancel: {
                 text: '關 閉',
