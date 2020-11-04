@@ -24,25 +24,16 @@ let downNumber = 0;
 function search () {
     stockCalculator.setDiscount(discount.val());
     stockCalculator.setLowestFee(lowestFee.val());
-    stockCalculator.setTaxPercen(0.15);
+    stockCalculator.setTaxPercen(0.3);
     referencePoint = parseFloat(price.val());
     topNumber = parseFloat(price.val());
     downNumber = parseFloat(price.val());
 
-    if (type.val() == 'buy') {
-        buyPrice = parseFloat(price.val());
-        buyOriginFee = stockCalculator.getOriginFee(buyPrice, sheet.val());
-        buyDiscount = stockCalculator.getDiscount(buyPrice, sheet.val());
-        buyFee = (discountType.val() == 'day') ? (buyOriginFee - buyDiscount) : buyOriginFee;
+    buyPrice = parseFloat(price.val());
+    buyOriginFee = stockCalculator.getOriginFee(buyPrice, sheet.val());
+    buyDiscount = stockCalculator.getDiscount(buyPrice, sheet.val());
+    buyFee = (discountType.val() == 'day') ? (buyOriginFee - buyDiscount) : buyOriginFee;
 
-    } else if (type.val() == 'sell') {
-        sellPrice = parseFloat(price.val());
-        sellOriginFee = stockCalculator.getOriginFee(sellPrice, sheet.val());
-        sellDiscount = stockCalculator.getDiscount(sellPrice, sheet.val());
-        sellFee = (discountType.val() == 'day') ? (sellOriginFee - sellDiscount) : sellOriginFee;
-        sellTax = stockCalculator.getTax(sellPrice, sheet.val());
-    }
-    
     setTable(price.val());
     showMoreTop();
     showMoreDown()
@@ -52,19 +43,12 @@ function search () {
 
 function setTable(price) {
     let tmpPrice = parseFloat(price);
-    if (type.val() == 'buy') {
-        sellPrice = parseFloat(tmpPrice);
-        sellOriginFee = stockCalculator.getOriginFee(sellPrice, sheet.val());
-        sellDiscount = stockCalculator.getDiscount(sellPrice, sheet.val());
-        sellFee = (discountType.val() == 'day') ? (sellOriginFee - sellDiscount) : sellOriginFee;
-        sellTax = stockCalculator.getTax(sellPrice, sheet.val());
+    sellPrice = parseFloat(tmpPrice);
+    sellOriginFee = stockCalculator.getOriginFee(sellPrice, sheet.val());
+    sellDiscount = stockCalculator.getDiscount(sellPrice, sheet.val());
+    sellFee = (discountType.val() == 'day') ? (sellOriginFee - sellDiscount) : sellOriginFee;
+    sellTax = stockCalculator.getTax(sellPrice, sheet.val());
 
-    } else if (type.val() == 'sell') {
-        buyPrice = parseFloat(tmpPrice);
-        buyOriginFee = stockCalculator.getOriginFee(buyPrice, sheet.val());
-        buyDiscount = stockCalculator.getDiscount(buyPrice, sheet.val());
-        buyFee = (discountType.val() == 'day') ? (buyOriginFee - buyDiscount) : buyOriginFee;
-    }
 
     let balance = (sellPrice * sheet.val() * 1000) - (buyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax);
     let bgClass = (referencePoint == tmpPrice) ? 'bg-light' : '';
@@ -86,12 +70,6 @@ function setTable(price) {
         } else if (referencePoint < tmpPrice) {
             list.append(content);
         }
-    } else if (type.val() == 'sell' && referencePoint != tmpPrice) {
-        if (referencePoint > tmpPrice) {
-            list.append(content);
-        } else if (referencePoint < tmpPrice) {
-            list.prepend(content);
-        }
     }
 }
 
@@ -103,17 +81,12 @@ function details(price) {
         sellDiscount = stockCalculator.getDiscount(sellPrice, sheet.val());
         sellFee = (discountType.val() == 'day') ? (sellOriginFee - sellDiscount) : sellOriginFee;
         sellTax = stockCalculator.getTax(sellPrice, sheet.val());
-    } else if (type.val() == 'sell') {
-        buyPrice = parseFloat(tmpPrice);
-        buyOriginFee = stockCalculator.getOriginFee(buyPrice, sheet.val());
-        buyDiscount = stockCalculator.getDiscount(buyPrice, sheet.val());
-        buyFee = (discountType.val() == 'day') ? (buyOriginFee - buyDiscount) : buyOriginFee;
     }
 
     let balance = (sellPrice * sheet.val() * 1000) - (buyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax);
     let rate = ((balance / Math.round(buyPrice * sheet.val() * 1000)) * 100).toFixed(2) + "%";
 
-    let buyDetails = (type.val() == 'dayTradingSell') ? ' - 回 補' : '';
+    let buyDetails = (type.val() == 'sell') ? ' - 回 補' : '';
     buyDetails = `
         <div class="rounded text-center" style="background:#dc3545;color:#fff">買 入${buyDetails}</div>
         <table>
@@ -191,15 +164,6 @@ function details(price) {
             <hr />
             ${balanceDetails} <br />
         `;
-    } else if (type.val() == 'sell') {
-        content = `
-            <table>
-            ${sellDetails}
-            <hr />
-            ${buyDetails}
-            <hr />
-            ${balanceDetails} <br />
-        `;
     }
 
     $.confirm({
@@ -245,6 +209,24 @@ function showMoreDown() {
             setTable(tmpPrice);
         }
     }
+}
+
+function typeQuestion () {
+    let content = `
+        是的，目前僅提供現股買入試算。 <br />
+        融資融券已在開發階段，請敬請期待！
+    `;
+    $.confirm({
+        title: '只有現股買入?',
+        type: 'blue',
+        columnClass: 'col-12 col-lg-4 col-md-6',
+        content: content,
+        buttons: {
+            cancel: {
+                text: '關 閉',
+            }
+        }
+    });
 }
 
 function discountQuestion () {
