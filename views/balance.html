@@ -13,7 +13,7 @@
         <script data-ad-client="ca-pub-9021908869688517" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
         <meta charset="utf-8">
-        <title>股市計算機 | 現股當沖試算</title>
+        <title>股市計算機 | 損益平衡試算</title>
         <meta name="description" content="股票試算網是一個提供多樣股票試算的網站，目前有提供：現股當沖試算計算、損益平衡試算計算、報酬率快速計算，網站本身是免費試算的，但您可以透過實際贊助支持站長，讓站長提供您更多試算工具。">
         
         <!-- Tell the browser to be responsive to screen width -->
@@ -58,7 +58,7 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0 text-dark">現股當沖試算</h1>
+                                <h1 class="m-0 text-dark">損益平衡試算</h1>
                             </div>
                         </div>
                     </div>
@@ -118,10 +118,12 @@
                         </div>
 
                         <div class="form-group">
-                            <label>做多 / 放空<span class="text-danger">*</sapn></label>
+                            <label>類型<span class="text-danger">*</sapn></label>
+                            <span class="text-dark curcursor-pointer" onclick="typeQuestion()"><i class="far fa-question-circle cust"></i> 只有現股買入?</span>
                             <select class="form-control" id="type">
-                                <option value="buy">做多(買)</option>
-                                <option value="sell">放空(賣)</option>
+                                <option value="buy">現股買入</option>
+                                <!-- <option>融資</option>
+                                <option>融券</option> -->
                             </select>
                         </div>
 
@@ -213,9 +215,5 @@
     <script src="../static/js/basic.js"></script>
     <script src="../static/js/layout.js?version=v1.2"></script>
     <script src="../static/js/stockCalculator.js"></script>
-    <script src="../static/js/dayTrading.js"></script>
-    
-    <script>
-       
-    </script>
+    <script src="../static/js/balance.js"></script>
 </html>
