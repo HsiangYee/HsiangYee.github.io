@@ -50,7 +50,7 @@ function setTable(price) {
     sellTax = stockCalculator.getTax(sellPrice, sheet.val());
 
 
-    let balance = (sellPrice * sheet.val() * 1000) - (buyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax);
+    let balance = parseInt(Math.round((sellPrice * sheet.val() * 1000) - (buyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax)));
     let bgClass = (referencePoint == tmpPrice) ? 'bg-light' : '';
 
     let content = `
@@ -83,7 +83,7 @@ function details(price) {
         sellTax = stockCalculator.getTax(sellPrice, sheet.val());
     }
 
-    let balance = (sellPrice * sheet.val() * 1000) - (buyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax);
+    let balance = parseInt(Math.round((sellPrice * sheet.val() * 1000) - (buyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax)));
     let rate = ((balance / Math.round(buyPrice * sheet.val() * 1000)) * 100).toFixed(2) + "%";
 
     let buyDetails = (type.val() == 'sell') ? ' - 回 補' : '';

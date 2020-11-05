@@ -39,7 +39,7 @@ function details() {
     sellTax = stockCalculator.getTax(tmpSellPrice, sheet.val());
 
 
-    let balance = (tmpSellPrice * sheet.val() * 1000) - (tmpBuyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax);
+    let balance = parseInt(Math.round((tmpSellPrice * sheet.val() * 1000) - (tmpBuyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax)));
     let rate = ((balance / Math.round(tmpBuyPrice * sheet.val() * 1000)) * 100).toFixed(2) + "%";
 
     let buyDetails = (type.val() == 'sell') ? ' - 回 補' : '';

@@ -62,7 +62,7 @@ class StockCalculator {
             tmpFee = this.lowestFee;
         }
 
-        return tmpFee;
+        return parseInt(tmpFee);
     }
 
     /**
@@ -80,7 +80,7 @@ class StockCalculator {
             tmpDiscount = Math.floor(originFee - Math.floor(price * (sheet * 1000) * this.feePercen * this.discount));
         }
 
-        return tmpDiscount;
+        return parseInt(tmpDiscount);
     }
 
     /**
@@ -92,7 +92,7 @@ class StockCalculator {
      * @return {Integer} 退回金額
      */
     getTax (price, sheet) {
-        return Math.floor(price * (sheet * 1000) * this.taxPercen);
+        return parseInt(Math.floor(price * (sheet * 1000) * this.taxPercen));
     }
 }
 
