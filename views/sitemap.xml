@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://hsianyee.github.io/index.html</loc>
+        <loc>http://hsiangyee.github.io/views/index.html</loc>
         <lastmod>2020-11-05</lastmod>
     </url>
     <url>
-        <loc>http://hsianyee.github.io/dayTrading.html</loc>
+        <loc>http://hsiangyee.github.io/views/dayTrading.html</loc>
         <lastmod>2020-11-05</lastmod>
     </url>
     <url>
-        <loc>http://hsianyee.github.io/balance.html</loc>
+        <loc>http://hsiangyee.github.io/views/balance.html</loc>
         <lastmod>2020-11-05</lastmod>
     </url>
     <url>
-        <loc>http://hsianyee.github.io/roi.html</loc>
+        <loc>http://hsiangyee.github.io/views/roi.html</loc>
         <lastmod>2020-11-05</lastmod>
     </url>
     <url>
-        <loc>http://hsianyee.github.io/author.html</loc>
+        <loc>http://hsiangyee.github.io/views/author.html</loc>
         <lastmod>2020-11-05</lastmod>
     </url>
 </urlset>
