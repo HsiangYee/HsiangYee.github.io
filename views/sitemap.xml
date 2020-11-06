@@ -3,41 +3,51 @@
     <url>
         <loc>http://hsiangyee.github.io/views/index.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>1</priority>
     </url>
     <url>
         <loc>https://hsiangyee.github.io/views/index.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>1</priority>
     </url>
     <url>
         <loc>http://hsiangyee.github.io/views/dayTrading.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://hsiangyee.github.io/views/dayTrading.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>http://hsiangyee.github.io/views/balance.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://hsiangyee.github.io/views/balance.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>http://hsiangyee.github.io/views/roi.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://hsiangyee.github.io/views/roi.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>http://hsiangyee.github.io/views/author.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://hsiangyee.github.io/views/author.html</loc>
         <lastmod>2020-11-05</lastmod>
+        <priority>0.9</priority>
     </url>
 </urlset>
