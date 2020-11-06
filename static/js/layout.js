@@ -17,33 +17,33 @@ const menuContent = `
         <nav class="mt-2" id="menu">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">
+                    <a href="index.html" title="股市計算機 | 首頁" class="nav-link">
                         <i class="fas fa-home custom-icon"></i>
                         <p>首頁</p>
                     </a>
                 </li>
                 <li class="nav-header">功能</li>
                 <li class="nav-item">
-                    <a href="roi.html" class="nav-link">
+                    <a href="roi.html" title="股市計算機 | 報酬率快速算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
                         <p>報酬率快速算</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="balance.html" class="nav-link">
+                    <a href="balance.html" title="股市計算機 | 損益平衡試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
                         <p>損益平衡試算</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="dayTrading.html" class="nav-link">
+                    <a href="dayTrading.html" title="股市計算機 | 現股當沖試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
                         <p>現股當沖試算</p>
                     </a>
                 </li>
                 <li class="nav-header">網站資訊</li>
                 <li class="nav-item">
-                    <a href="author.html" class="nav-link">
+                    <a href="author.html" title="股市計算機 | 關於作者 & 網站" class="nav-link">
                         <i class="far fa-user-circle custom-icon"></i>
                         <p>關於作者 & 網站</p>
                     </a>
