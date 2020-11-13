@@ -77,7 +77,9 @@ class StockCalculator {
         let tmpDiscount = 0;
         let originFee = this.getOriginFee(price, sheet);
         if (originFee > this.lowestFee) {
-            tmpDiscount = Math.floor(originFee - Math.floor(price * (sheet * 1000) * this.feePercen * this.discount));
+            tmpDiscount = Math.floor(Math.floor(price * (sheet * 1000) * this.feePercen * this.discount));
+            tmpDiscount = (tmpDiscount <= this.lowestFee) ? this.lowestFee : tmpDiscount;
+            tmpDiscount = originFee - tmpDiscount;
         }
 
         return parseInt(tmpDiscount);
