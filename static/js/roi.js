@@ -56,7 +56,7 @@ function details() {
             </tr>
             <tr>
                 <td>價金</td>
-                <td>：${formatNumber(tmpBuyPrice * sheet.val() * 1000)}</td>
+                <td>：${formatNumber(Math.round(tmpBuyPrice * sheet.val() * 1000))}</td>
             </tr>
             <tr>
                 <td>手續費</td>
@@ -77,7 +77,7 @@ function details() {
             </tr>
             <tr>
                 <td>價金</td>
-                <td>：${formatNumber(tmpSellPrice * sheet.val() * 1000)}</td>
+                <td>：${formatNumber(Math.round(tmpSellPrice * sheet.val() * 1000))}</td>
             </tr>
             <tr>
                 <td>手續費</td>
