@@ -41,6 +41,16 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>http://hsiangyee.github.io/views/dayTradingMini.html</loc>
+        <lastmod>2021-01-22</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hsiangyee.github.io/views/dayTradingMini.html</loc>
+        <lastmod>2021-01-22</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>http://hsiangyee.github.io/views/balance.html</loc>
         <lastmod>2020-11-05</lastmod>
         <priority>0.8</priority>
