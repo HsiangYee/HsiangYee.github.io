@@ -41,17 +41,17 @@ const menuContent = `
                         <p>現股當沖試算</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="dayTradingMini.html" title="股市計算機 | 現股當沖試算(Mini)" class="nav-link">
+                        <i class="fas fa-calculator custom-icon"></i>
+                        <p>現股當沖試算(Mini)</p>
+                    </a>
+                </li>
                 <li class="nav-header">網站資訊</li>
                 <li class="nav-item">
                     <a href="views/author.html" title="股市計算機 | 關於作者 & 網站" class="nav-link">
                         <i class="far fa-user-circle custom-icon"></i>
                         <p>關於作者 & 網站</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="dayTradingMini.html" title="股市計算機 | 現股當沖試算(Mini)" class="nav-link">
-                        <i class="fas fa-calculator custom-icon"></i>
-                        <p>現股當沖試算(Mini)</p>
                     </a>
                 </li>
             </ul>
