@@ -42,7 +42,7 @@ const menuContent = `
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="dayTradingMini.html" title="股市計算機 | 現股當沖試算(Mini)" class="nav-link">
+                    <a href="views/dayTradingMini.html" title="股市計算機 | 現股當沖試算(Mini)" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
                         <p>現股當沖試算(Mini)</p>
                     </a>
