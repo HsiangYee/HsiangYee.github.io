@@ -56,3 +56,6 @@ function coffee () {
         }
     });
 }
+
+let likeButtonLink = "https://button.like.co/in/embed/jameshsiang/button?referrer=" + window.location.href;
+$('#likeButton').attr('src', likeButtonLink)

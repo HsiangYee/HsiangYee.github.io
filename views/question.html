@@ -13,17 +13,17 @@
         <script data-ad-client="ca-pub-8969180932862200" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
         <meta charset="utf-8">
-        <title>股市計算機 | 報酬率快速算</title>
+        <title>股市計算機 | 關於作者 & 網站</title>
         <meta name="description" content="股市計算機提供多樣股市試算的網站，目前有提供：現股當沖試算、現股當沖試算(Mini)損益平衡試算、報酬率快速算，網站本身是免費試算的，但您可以透過實際贊助支持站長，讓站長提供您更多試算工具。">
         <meta name="keywords" content="股市計算機、當沖試算、現股試算、損益平衡試算、股票試算">
-        <meta property="og:title" content="股市計算機｜報酬率快速算" />
+        <meta property="og:title" content="股市計算機｜關於作者 & 網站" />
         <meta property="og:site_name" content="股市計算機" />
         <meta property="og:description" content="股市計算機提供多樣股市試算的網站，目前有提供：現股當沖試算、現股當沖試算(Mini)損益平衡試算、報酬率快速算，網站本身是免費試算的，但您可以透過實際贊助支持站長，讓站長提供您更多試算工具。" />
-        <meta property="og:url" content="https://hsiangyee.github.io/views/roi.html" />
+        <meta property="og:url" content="https://hsiangyee.github.io/views/author.html" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href="https://hsiangyee.github.io/views/roi.html" />
-        <link rel="alternate" media="only screen and (max-width: 640px)" href="https://hsiangyee.github.io/views/roi.html" />
+        <link rel="canonical" href="https://hsiangyee.github.io/views/author.html" />
+        <link rel="alternate" media="only screen and (max-width: 640px)" href="https://hsiangyee.github.io/views/author.html" />
         
         <!-- Tell the browser to be responsive to screen width -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,84 +59,49 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0 text-dark">報酬率快速算</h1>
+                                <h1 class="m-0 text-dark">常見問題</h1>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <section class="content" id="content">
-                    <div class="card card-info">
-                        <div class="card-header py-2">
-                            <h3 class="card-title">帳戶屬性</h3>
-
-                            <div class="card-tools">
-                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                <i class="fas fa-minus"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="form-group">
-                                <label>手續費折數<span class="text-danger">*</span></label>
-                                <span class="text-dark curcursor-pointer" onclick="discountQuestion()"><i class="far fa-question-circle cust"></i> 如何填寫?</span>
-                                <input type="number" step="0.1" class="form-control" id="discount" value="2.8" placeholder="2.8">
-                            </div>
-                            <div class="form-group">
-                                <label>最低手續費(元)<span class="text-danger">*</sapn></label>
-                                <input type="number" class="form-control" value="20" id="lowestFee" placeholder="20">
-                            </div>
-                            <div class="form-group">
-                                <label>折讓方式<span class="text-danger">*</sapn></label>
-                                <span class="text-dark curcursor-pointer" onclick="discountTypeQuestion()"><i class="far fa-question-circle cust"></i> 計算方式</span>
-                                <select class="form-control" id="discountType">
-                                    <option value="day">日退</option>
-                                    <option value="month">月退</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="callout callout-info">
+                        <h5><span class="text-dark"><B>頁面中底下的按讚和讚賞公民是什麼?</B></span></h5>
+                        <span class="text-dark">
+                            按讚是回饋作者的一種方式，如果您喜歡版主的網站，但預算又有限的話，可以按 1 ~ 5 的讚(幫版主按爆xD)，這個按讚的動作並不會產生費用，但會轉換成 LikeCoin 虛擬貨幣給版主。 <br />
+                            讚賞公民是每個月 5 塊美元贊助版主，如果您是版主的忠實用戶預算又夠的話，不妨贊助版主每個月一杯咖啡哦~
+                        </span>
                     </div>
 
-                    <div class="card card-info">
-                        <div class="card-header py-2">
-                            <h3 class="card-title">試算</h3>
+                    <div class="callout callout-info">
+                        <h5><span class="text-dark"><B>能有更多的手續費選擇嗎?</B></span></h5>
+                        <span class="text-dark">
+                            在每個計算機中在「手續費折數」欄位中可以填寫您自己的手續費折數，打 6 折請填 6 打 28 折請填 2.8，以此類推。 <br />
+                            範例1:小明手續費是23折，則填入 2.3 <br />
+                            範例2:大熊沒有手續費，則填入 10
+                        </span>
+                    </div>
 
-                            <div class="card-tools">
-                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                    <i class="fas fa-minus"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                        <div class="form-group">
-                            <label>買入價格(每股)<span class="text-danger">*</sapn></label>
-                            <input type="number" step="0.01" class="form-control" value="100" id="buyPrice" placeholder="100">
-                        </div>
+                    <div class="callout callout-info">
+                        <h5><span class="text-dark"><B>能有一個直接算出虧損的功能嗎?</B></span></h5>
+                        <span class="text-dark">
+                            在報酬率快速算中就有提供這個功能，可以依造自己的買入賣出價格快速算出損益以及詳細交易明細。
+                        </span>
+                    </div>
 
-                        <div class="form-group">
-                            <label>賣出價格(每股)<span class="text-danger">*</sapn></label>
-                            <input type="number" step="0.01" class="form-control" value="100" id="sellPrice" placeholder="100">
-                        </div>
+                    <div class="callout callout-info">
+                        <h5><span class="text-dark"><B>能顯示損益 % 數嗎?</B></span></h5>
+                        <span class="text-dark">
+                            在「現股當沖試算」、「現股當沖試算(Mini)」和「損益平衡試算」中，每一個 Tick 欄位點擊後都會出現交易明細，裡面就可以詳細看到完整個交易明細，包含損益 % 數。
+                        </span>
+                    </div>
 
-                        <div class="form-group">
-                            <label>張數<span class="text-danger">*</sapn></label>
-                            <input type="number" step="1" class="form-control" value="1" id="sheet" placeholder="100">
-                        </div>
-
-                        <div class="form-group">
-                            <label>類型<span class="text-danger">*</sapn></label>
-                            <span class="text-dark curcursor-pointer" onclick="typeQuestion()"><i class="far fa-question-circle cust"></i> 只有現股和現股當沖?</span>
-                            <select class="form-control" id="type">
-                                <option value="general">現股</option>
-                                <option value="dayTradingBuy">現股當沖(先買)</option>
-                                <option value="dayTradingSell">現股當沖(先賣)</option>
-                                <!-- <option>融資</option>
-                                <option>融券</option> -->
-                            </select>
-                        </div>
-
-                        <button class="btn btn-sm btn-success w-100" onclick="details()">試 算</button>
-                        </div>
+                    <div class="callout callout-info">
+                        <h5><span class="text-dark"><B>現股當沖試算(Mini) 是幹嘛的?</B></span></h5>
+                        <span class="text-dark">
+                            「現股當沖試算(Mini)」 和 「現股當沖試算」，功能一模一樣的，只是在顯示的欄位不同，在 Mini 中使用者可以更快速的檢視損益 % 數和損益，其餘功能都相同。
+                        </span>
                     </div>
 
                     <iframe id="likeButton" class="zoom" src="" frameborder="0" scrolling="no"></iframe>
@@ -150,8 +115,7 @@
             </footer>
         </div>
     </body>
-
-
+    
     <!-- jQuery -->
     <script src="../static/template/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
@@ -168,6 +132,4 @@
     <script src="../static/js/toast.js?v=1.2.8"></script>
     <script src="../static/js/basic.js?v=1.2.8"></script>
     <script src="../static/js/layout.js?v=1.2.8"></script>
-    <script src="../static/js/stockCalculator.js?v=1.2.8"></script>
-    <script src="../static/js/roi.js?v=1.2.8"></script>
 </html>

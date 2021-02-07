@@ -49,6 +49,12 @@ const menuContent = `
                 </li>
                 <li class="nav-header">網站資訊</li>
                 <li class="nav-item">
+                    <a href="views/question.html" title="股市計算機 | 常見問題" class="nav-link">
+                        <i class="fas fa-question custom-icon"></i>
+                        <p>常見問題</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="views/author.html" title="股市計算機 | 關於作者 & 網站" class="nav-link">
                         <i class="far fa-user-circle custom-icon"></i>
                         <p>關於作者 & 網站</p>
