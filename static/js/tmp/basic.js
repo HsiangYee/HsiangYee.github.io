@@ -2,7 +2,7 @@
  * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
  * 著作權 © 2020 - 2021 HsiangYee 版權所有
  *********************************************************************/
- document.onkeydown = function() {  
+document.onkeydown = function() {  
     var e = window.event || arguments[0];  
     if(e.keyCode == 123) {  
         return false;  
