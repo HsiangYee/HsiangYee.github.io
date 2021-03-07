@@ -1,3 +1,8 @@
+/*********************************************************************
+ * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
+ * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ *********************************************************************/
+
 const menuAndNavbar = $('#menuAndNavbar');
 const menuContent = `
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">

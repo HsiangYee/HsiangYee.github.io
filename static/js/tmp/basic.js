@@ -1,3 +1,8 @@
+/*********************************************************************
+ * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
+ * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ *********************************************************************/
+
 function copy(object) {
     var text = $(object).attr('value');
     var input = document.createElement('input');
