@@ -127,12 +127,12 @@ while(!finish){
         time ++ ;
         tmp[2] = true;
         adsHtml += `<a href="${tmp[0]}" target="_blank">${tmp[1]}</a>`;
-    }
 
-    if (time == 6) {
-        finish = true;
-    } else {
-        adsHtml += '<hr>';
+        if (time == 6) {
+            finish = true;
+        } else {
+            adsHtml += '<hr>';
+        }
     }
 }
 
