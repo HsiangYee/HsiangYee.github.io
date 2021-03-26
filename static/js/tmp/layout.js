@@ -65,6 +65,21 @@ const menuContent = `
                         <p>關於作者 & 網站</p>
                     </a>
                 </li>
+
+                <li class="nav-header">廣告贊助</li>
+                <li class="nav-item">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- nav-ad -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-8969180932862200"
+                        data-ad-slot="8360958099"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </li>
             </ul>
         </nav>
     </aside> 
