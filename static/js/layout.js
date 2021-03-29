@@ -85,6 +85,3 @@ $(document).ready(function (){
     menuAndNavbar.html(menuContent);
     content.append(shareHTML);
 });
-document.oncontextmenu = function(){
-    return false
-}
