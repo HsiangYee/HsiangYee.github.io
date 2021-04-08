@@ -26,17 +26,7 @@
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://hsiangyee.github.io/views/index.html</loc>
-        <lastmod>2021-03-05</lastmod>
-        <priority>1</priority>
-    </url>
-    <url>
         <loc>https://stock-calculator.net/views/dayTrading.html</loc>
-        <lastmod>2021-03-05</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://hsiangyee.github.io/views/dayTrading.html</loc>
         <lastmod>2021-03-05</lastmod>
         <priority>0.8</priority>
     </url>
@@ -46,17 +36,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hsiangyee.github.io/views/dayTradingMini.html</loc>
-        <lastmod>2021-03-05</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://stock-calculator.net/views/balance.html</loc>
-        <lastmod>2021-03-05</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://hsiangyee.github.io/views/balance.html</loc>
         <lastmod>2021-03-05</lastmod>
         <priority>0.8</priority>
     </url>
@@ -66,27 +46,12 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hsiangyee.github.io/views/roi.html</loc>
-        <lastmod>2021-03-05</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://stock-calculator.net/views/question.html</loc>
         <lastmod>2021-03-05</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://hsiangyee.github.io/views/question.html</loc>
-        <lastmod>2021-03-05</lastmod>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://stock-calculator.net/views/author.html</loc>
-        <lastmod>2021-03-05</lastmod>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://hsiangyee.github.io/views/author.html</loc>
         <lastmod>2021-03-05</lastmod>
         <priority>0.9</priority>
     </url>
