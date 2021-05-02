@@ -46,6 +46,16 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://stock-calculator.net/views/ETF.html</loc>
+        <lastmod>2021-05-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://stock-calculator.net/views/warrant.html</loc>
+        <lastmod>2021-05-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://stock-calculator.net/views/question.html</loc>
         <lastmod>2021-03-05</lastmod>
         <priority>0.7</priority>

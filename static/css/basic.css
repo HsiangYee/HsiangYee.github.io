@@ -1,6 +1,8 @@
 /*********************************************************************
  * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
  * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ * 非經同意不得翻印轉載或以任何方式重製，以免侵犯臺灣智慧財產權須負責刑法與民法
+ * 君子請自重 勿淪為小人，請勿以身試法，留下前科
  *********************************************************************/
 
 html, body {
@@ -87,4 +89,78 @@ html, body {
     max-height: 185px;
     max-width: 480px;
     margin-bottom: 15px;
+}
+
+/*
+|--------------------------------------------------------------------------------------
+| form
+|--------------------------------------------------------------------------------------
+*/
+/* checkbox style */
+.onoffswitch {
+    position: relative;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #999999; border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 26px; padding: 0; line-height: 26px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    padding-left: 13px;
+    background-color: #336699; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    padding-right: 13px;
+    background-color: #6699cc; color: #FFFFFF;
+    text-align: right;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.onoffswitch-unit {
+    width: 43px;
+}
+
+.onoffswitch-inner-unit:before {
+    content: "張";
+}
+
+.onoffswitch-inner-unit:after {
+    content: "股";
+}
+
+.onoffswitch-discountType {
+    width: 100px;
+}
+
+.onoffswitch-inner-discountType:before {
+    content: "日退";
+}
+
+.onoffswitch-inner-discountType:after {
+    content: "月退";
 }
