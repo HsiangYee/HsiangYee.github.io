@@ -33,13 +33,13 @@ const menuContent = `
                 <li class="nav-item">
                     <a href="views/roi.html" title="股市計算機 | 報酬率快速算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>報酬率快速算</p>
+                        <p>報酬率快速算 <span class="text-danger"><small>新增零股</small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="views/balance.html" title="股市計算機 | 損益平衡試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>損益平衡試算</p>
+                        <p>損益平衡試算 <span class="text-danger"><small>新增零股</small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -57,7 +57,7 @@ const menuContent = `
                 <li class="nav-item">
                     <a href="views/ETF.html" title="股市計算機 | ETF 試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>ETF 試算</p>
+                        <p>ETF 試算 <span class="text-danger"><small>新功能</small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
