@@ -1,6 +1,8 @@
 /*********************************************************************
  * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
  * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ * 非經同意不得翻印轉載或以任何方式重製，以免侵犯臺灣智慧財產權須負責刑法與民法
+ * 君子請自重 勿淪為小人，請勿以身試法，留下前科
  *********************************************************************/
 
 const menuAndNavbar = $('#menuAndNavbar');
@@ -50,6 +52,18 @@ const menuContent = `
                     <a href="views/dayTradingMini.html" title="股市計算機 | 現股當沖試算(Mini)" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
                         <p>現股當沖試算(Mini)</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="views/ETF.html" title="股市計算機 | ETF 試算" class="nav-link">
+                        <i class="fas fa-calculator custom-icon"></i>
+                        <p>ETF 試算</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="views/warrant.html" title="股市計算機 | 權證試算" class="nav-link">
+                        <i class="fas fa-calculator custom-icon"></i>
+                        <p>權證試算 <span class="text-danger"><small>新功能</small></span></p>
                     </a>
                 </li>
                 <li class="nav-header">網站資訊</li>

@@ -1,6 +1,8 @@
 /*********************************************************************
  * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
  * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ * 非經同意不得翻印轉載或以任何方式重製，以免侵犯臺灣智慧財產權須負責刑法與民法
+ * 君子請自重 勿淪為小人，請勿以身試法，留下前科
  *********************************************************************/
 
 class StockCalculator {
@@ -11,13 +13,15 @@ class StockCalculator {
      * @param {Integer} lowestFee - 最低手續費(元)
      * @param {Float} feePercen - 原始手續費(%)
      * @param {Float} taxPercen - 證交稅(%)
+     * @param {Integer} unit - 單位
      * 
      */
-    constructor (discount = 10, lowestFee = 20, feePercen = 0.1425, taxPercen = 0.3) {
+    constructor (discount = 10, lowestFee = 20, feePercen = 0.1425, taxPercen = 0.3, unit = 1000) {
         this.discount = roundDecimal(discount * 0.1, 2);
         this.lowestFee = parseInt(lowestFee);
         this.feePercen = roundDecimal(feePercen * 0.01, 8);
         this.taxPercen = roundDecimal(taxPercen * 0.01, 4);
+        this.unit = unit;
     }
 
     /**
@@ -43,6 +47,17 @@ class StockCalculator {
     }
 
     /**
+     * 設定單位
+     * 
+     * @param {Integer} unit - 單位
+     * 
+     * @return Void
+     */
+     setUnit (unit) {
+        this.unit = unit;
+    }
+
+    /**
      * 設定證交稅
      * 
      * @param {Float} lowestFee - 證交稅(%)
@@ -57,12 +72,12 @@ class StockCalculator {
      * 取得原始手續費
      * 
      * @param {Float} price - 每股金額
-     * @param {Integer} sheet - 張數
+     * @param {Integer} amount - 數量
      * 
      * @return {Integer} 原始手續費
      */
-    getOriginFee (price, sheet) {
-        let tmpFee = Math.floor(price * (sheet * 1000) * this.feePercen);
+    getOriginFee (price, amount) {
+        let tmpFee = Math.floor(price * (amount * this.unit) * this.feePercen);
         if (tmpFee <= this.lowestFee) {
             tmpFee = this.lowestFee;
         }
@@ -74,15 +89,15 @@ class StockCalculator {
      * 取得退回金額
      * 
      * @param {Float} price - 每股金額
-     * @param {Integer} sheet - 張數
+     * @param {Integer} amount - 數量
      * 
      * @return {Integer} 退回金額
      */
-    getDiscount (price, sheet) {
+    getDiscount (price, amount) {
         let tmpDiscount = 0;
-        let originFee = this.getOriginFee(price, sheet);
+        let originFee = this.getOriginFee(price, amount);
         if (originFee > this.lowestFee) {
-            tmpDiscount = Math.floor(Math.floor(price * (sheet * 1000) * this.feePercen * this.discount));
+            tmpDiscount = Math.floor(Math.floor(price * (amount * this.unit) * this.feePercen * this.discount));
             tmpDiscount = (tmpDiscount <= this.lowestFee) ? this.lowestFee : tmpDiscount;
             tmpDiscount = originFee - tmpDiscount;
         }
@@ -94,12 +109,14 @@ class StockCalculator {
      * 取得證交稅金額
      * 
      * @param {Float} price - 每股金額
-     * @param {Integer} sheet - 張數
+     * @param {Integer} amount - 數量
      * 
      * @return {Integer} 退回金額
      */
-    getTax (price, sheet) {
-        return parseInt(Math.floor(price * (sheet * 1000) * this.taxPercen));
+    getTax (price, amount) {
+        let tax = parseInt(Math.floor(price * (amount * this.unit) * this.taxPercen));
+        tax = (tax <= 0) ? 1 : tax;
+        return tax;
     }
 }
 
@@ -128,6 +145,27 @@ function formatPoint (price) {
     }
 
     if (price >= 500){
+        return price.toFixed(0);
+    }
+}
+
+function ETFFormatPoint (price) {
+    price = parseFloat(price);
+  
+    return price.toFixed(2);
+}
+
+function warrantFormatPoint (price) {
+    price = parseFloat(price);
+    if (price < 10){
+        return price.toFixed(2);
+    }
+
+    if (price >= 10  && price <= 50){
+        return price.toFixed(1);
+    }
+
+    if (price >= 50){
         return price.toFixed(0);
     }
 }
@@ -196,6 +234,98 @@ function downTick(price) {
     }
 
     if (price > 1000){
+        tick = 5;
+    }
+
+    price = price - tick;
+    return price.toFixed(2);
+}
+
+function ETFupTick(price) {
+    price = parseFloat(price);
+    let tick = 0;
+    if (price < 10){
+        tick = 0.01;
+    }
+
+    if (price >= 10){
+        tick = 0.05;
+    }
+
+    price = price + tick;
+    return price.toFixed(2);
+}
+
+function ETFdownTick(price) {
+    price = parseFloat(price);
+    let tick = 0;
+    if (price <= 10){
+        tick = 0.01;
+    }
+
+    if (price > 10){
+        tick = 0.05;
+    }
+
+    price = price - tick;
+    return price.toFixed(2);
+}
+
+function warrantUpTick(price) {
+    price = parseFloat(price);
+    let tick = 0;
+    if (price < 5){
+        tick = 0.01;
+    }
+
+    if (price >= 5 && price < 10){
+        tick = 0.05;
+    }
+
+    if (price >= 10 && price < 50){
+        tick = 0.1;
+    }
+
+    if (price >= 50 && price < 100){
+        tick = 0.5;
+    }
+
+    if (price >= 100 && price < 500){
+        tick = 1;
+    }
+
+    if (price >= 500){
+        tick = 5;
+    }
+
+    price = price + tick;
+    return price.toFixed(2);
+  }
+
+function warrantDownTick(price) {
+    price = parseFloat(price);
+    let tick = 0;
+    if (price <= 5){
+        tick = 0.01;
+    }
+
+    if (price > 5 && price <= 10){
+        tick = 0.05;
+    }
+
+    if (price > 10 && price <= 50){
+        tick = 0.1;
+    }
+
+    if (price > 50 && price <= 100){
+        tick = 0.5;
+    }
+
+    if (price > 100 && price <= 500){
+        tick = 1;
+    }
+
+    if (price > 500){
         tick = 5;
     }
 
