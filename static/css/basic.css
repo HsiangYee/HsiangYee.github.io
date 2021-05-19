@@ -164,3 +164,49 @@ html, body {
 .onoffswitch-inner-discountType:after {
     content: "月退";
 }
+
+.ads-banner {
+    max-width: 600px;
+    background-color: #e01a4f;
+    color: #fff;
+    border-radius: 10px;
+}
+
+a.ads-banner:hover {
+    color: #fff;
+}
+
+.ads-title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.ads-content {
+    font-size: 18px;
+}
+
+.ads-yellow {
+    color: yellow;
+}
+
+@media screen and (max-width: 320px){
+    .ads-title {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    .ads-content {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px){
+    .ads-title {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    .ads-content {
+        font-size: 16px;
+    }
+}
