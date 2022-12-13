@@ -1,6 +1,6 @@
 /*********************************************************************
- * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
- * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ * Copyright © 2020 - 2022 HsiangYee All Rights Reserved.
+ * 著作權 © 2020 - 2022 HsiangYee 版權所有
  * 非經同意不得翻印轉載或以任何方式重製，以免侵犯臺灣智慧財產權須負責刑法與民法
  * 君子請自重 勿淪為小人，請勿以身試法，留下前科
  *********************************************************************/
@@ -33,13 +33,13 @@ const menuContent = `
                 <li class="nav-item">
                     <a href="roi.html" title="股市計算機 | 報酬率快速算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>報酬率快速算 <span class="text-danger"><small>新增零股</small></span></p>
+                        <p>報酬率快速算 <span class="text-danger"><small></small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="balance.html" title="股市計算機 | 損益平衡試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>損益平衡試算 <span class="text-danger"><small>新增零股</small></span></p>
+                        <p>損益平衡試算 <span class="text-danger"><small></small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -57,13 +57,13 @@ const menuContent = `
                 <li class="nav-item">
                     <a href="ETF.html" title="股市計算機 | ETF 試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>ETF 試算 <span class="text-danger"><small>新功能</small></span></p>
+                        <p>ETF 試算 <span class="text-danger"><small></small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="warrant.html" title="股市計算機 | 權證試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>權證試算 <span class="text-danger"><small>新功能</small></span></p>
+                        <p>權證試算 <span class="text-danger"><small></small></span></p>
                     </a>
                 </li>
                 <li class="nav-header">網站資訊</li>
@@ -73,12 +73,13 @@ const menuContent = `
                         <p>常見問題</p>
                     </a>
                 </li>
+                <!--
                 <li class="nav-item">
                     <a href="author.html" title="股市計算機 | 關於作者 & 網站" class="nav-link">
                         <i class="far fa-user-circle custom-icon"></i>
                         <p>關於作者 & 網站</p>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </aside> 
@@ -92,10 +93,56 @@ const shareHTML = `
     </div>
 `;
 
-
-
-
 $(document).ready(function (){
     menuAndNavbar.html(menuContent);
     content.append(shareHTML);
+});
+
+function getRandom(min,max){
+    return Math.floor(Math.random()*max)+min;
+};
+
+ADcontent = [
+    {
+        'content': `<img src="../static/images/股票道場.jpg" width="100%" style="border-radius:10px"> <br /><br />
+                    <ul style="line-height:30px">
+                        <li>將操盤職人的技術刻在腦海中並將之重現</li>
+                        <li>簡單易懂的手法初學者也可以輕鬆使用</li>
+                        <li>不僅是知識更教您將知識實踐的行動力</li>
+                        <li>鎖定窄範圍且深度的學習 讓財富自由離你我更近</li>
+                    </ul>`,
+        'url': 'https://tinyurl.com/2kt8lv7z'
+    },
+
+    {
+        'content': `<div class="text-center" style="line-height:36px;">
+                        <H4><B>量價操盤術</B></h4>
+                    </div>
+
+                    <span style="font-size:18px;">
+                    擁有高質量的操盤課程，讓初學者的你快速掌握股票高勝率秘訣
+                    </span>
+                    `,
+        'url': 'https://tinyurl.com/2q7rd9aa'
+    },
+];
+
+ADnumber = getRandom(0, 2)
+$.confirm({
+    title: '',
+    type: 'blue',
+    columnClass: 'col-12 col-lg-4 col-md-6',
+    content: ADcontent[ADnumber]['content'],
+    buttons: {
+        cancel: {
+            text: '沒 興 趣',
+        },
+        sure: {
+            text: '我 有 興 趣',
+            btnClass: 'btn-primary',
+            action: function() {
+                window.open(ADcontent[ADnumber]['url'], '_blank');
+            },
+        }
+    }
 });

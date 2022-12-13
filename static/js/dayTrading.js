@@ -1,7 +1,302 @@
 /*********************************************************************
- * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
- * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ * Copyright © 2020 - 2022 HsiangYee All Rights Reserved.
+ * 著作權 © 2020 - 2022 HsiangYee 版權所有
  * 非經同意不得翻印轉載或以任何方式重製，以免侵犯臺灣智慧財產權須負責刑法與民法
  * 君子請自重 勿淪為小人，請勿以身試法，留下前科
  *********************************************************************/
- var _0x2259=['replace','toString','336169jwgWTX','3vVFiKF','241hvnglP','404800jiLDss','split','90516Rnhxyd','41wcMguo','1375dzVNGU','192227thaNVL','fromCharCode','|||||||td||val||sheet|tr|||this|function|parseFloat||type|stockCalculator||let|||sellPrice|formatNumber||||return|buyPrice|1e3|toFixed|Math|50|buyOriginFee|sellOriginFee|tmpPrice|lowestFee|500|referencePoint|buyDiscount|sellDiscount|01|100|discountType|col|getOriginFee|price|sellTax|table|parseInt|getDiscount|round|list|buy|sell|br|discount|roundDecimal|05||buyFee||sellFee|topNumber||downNumber|day|setTable|unit|for|text|class|floor|getTax|formatPoint|coloring|span|style|color|width|div|hr|if|feePercen|taxPercen|upTick|downTick|html|confirm|title|blue|columnClass|lg|md|content|buttons|cancel|StockCalculator|setDiscount|setLowestFee|setTaxPercen|pow|toString|void|dc3545|28a745|search|showMoreTop|showMoreDown|details|prepend|append|rounded|center|background|fff|else|lowestFeeAlert|constructor|1425|setUnit||var|test|replace|ETFFormatPoint||warrantFormatPoint|indexOf||ETFupTick|ETFdownTick|warrantUpTick|warrantDownTick|const|new|toast|fire|success|curcursor|pointer|bg|light|onclick|dayTradingSell|month|discountQuestion|discountTypeQuestion|lowestFeeChange','4nExoXU','\x5cw+','345267dsyWHD','1929zMiPTh'];function _0x263a(_0x1e484d,_0x311df6){_0x1e484d=_0x1e484d-0x185;var _0x2259cf=_0x2259[_0x1e484d];return _0x2259cf;}var _0x184a2b=_0x263a;(function(_0x336d05,_0x40bc71){var _0x2dd7b8=_0x263a;while(!![]){try{var _0x187282=-parseInt(_0x2dd7b8(0x186))*parseInt(_0x2dd7b8(0x18c))+-parseInt(_0x2dd7b8(0x193))*-parseInt(_0x2dd7b8(0x189))+-parseInt(_0x2dd7b8(0x195))+parseInt(_0x2dd7b8(0x192))+parseInt(_0x2dd7b8(0x187))*parseInt(_0x2dd7b8(0x188))+parseInt(_0x2dd7b8(0x18f))*parseInt(_0x2dd7b8(0x194))+-parseInt(_0x2dd7b8(0x18e));if(_0x187282===_0x40bc71)break;else _0x336d05['push'](_0x336d05['shift']());}catch(_0x5251be){_0x336d05['push'](_0x336d05['shift']());}}}(_0x2259,0x4e9bf),eval(function(_0x1e4058,_0xc49863,_0x2105b2,_0x25e636,_0x518750,_0x42cc25){var _0x52fa2d=_0x263a;_0x518750=function(_0x117602){var _0x36032e=_0x263a;return(_0x117602<_0xc49863?'':_0x518750(parseInt(_0x117602/_0xc49863)))+((_0x117602=_0x117602%_0xc49863)>0x23?String[_0x36032e(0x18a)](_0x117602+0x1d):_0x117602[_0x36032e(0x191)](0x24));};if(!''[_0x52fa2d(0x190)](/^/,String)){while(_0x2105b2--)_0x42cc25[_0x518750(_0x2105b2)]=_0x25e636[_0x2105b2]||_0x518750(_0x2105b2);_0x25e636=[function(_0x439ee1){return _0x42cc25[_0x439ee1];}],_0x518750=function(){var _0x292b6c=_0x52fa2d;return _0x292b6c(0x18d);},_0x2105b2=0x1;};while(_0x2105b2--)if(_0x25e636[_0x2105b2])_0x1e4058=_0x1e4058[_0x52fa2d(0x190)](new RegExp('\x5cb'+_0x518750(_0x2105b2)+'\x5cb','g'),_0x25e636[_0x2105b2]);return _0x1e4058;}('1c\x201C{1X(e=10,t=20,l=.1Y,n=.3,r=w){f.X=Y(.1*e,2),f.D=Q(t),f.1o=Y(.I*l,8),f.1p=Y(.I*n,4),f.19=r}1D(e){f.X=Y(.1*e,2)}1E(e){f.D=Q(e)}1Z(e){f.19=e}1F(e){f.1p=Y(.I*e,4)}M(e,t){m\x20l=y.1d(e*(t*f.19)*f.1o);u\x20l<=f.D&&(l=f.D),Q(l)}R(e,t){m\x20l=0,n=f.M(e,t);u\x20n>f.D&&(l=n-(l=(l=y.1d(y.1d(e*(t*f.19)*f.1o*f.X)))<=f.D?f.D:l)),Q(l)}1e(e,t){m\x20l=Q(y.1d(e*(t*f.19)*f.1p));u\x20l=l<=0?1:l}}g\x20Y(e,t){u\x20y.S(y.S(e*y.1G(10,(t||0)+1))/10)/y.1G(10,t||0)}g\x20q(e){1a(21\x20t=e.1H(),l=/(-?\x5cd+)(\x5cd{3})/;l.22(t);)t=t.23(l,\x22$1,$2\x22);u\x20t}g\x201f(e){u(e=h(e))<z?e.x(2):e>=z&&e<=E?e.x(1):e>=E?e.x(0):1I\x200}g\x2024(e){u(e=h(e)).x(2)}g\x2026(e){u(e=h(e))<10?e.x(2):e>=10&&e<=z?e.x(1):e>=z?e.x(0):1I\x200}g\x201g(e){m\x20t=e.1H();u\x20t.27(\x22-\x22)<0?`<1h\x201i=\x221j:#1J\x22>${t}</1h>`:`<1h\x201i=\x221j:#1K\x22>${t}</1h>`}g\x201q(e){m\x20t=0;u(e=h(e))<10&&(t=.I),e>=10&&e<z&&(t=.Z),e>=z&&e<J&&(t=.1),e>=J&&e<E&&(t=.5),e>=E&&e<w&&(t=1),e>=w&&(t=5),(e+=t).x(2)}g\x201r(e){m\x20t=0;u(e=h(e))<=10&&(t=.I),e>10&&e<=z&&(t=.Z),e>z&&e<=J&&(t=.1),e>J&&e<=E&&(t=.5),e>E&&e<=w&&(t=1),e>w&&(t=5),(e-=t).x(2)}g\x2029(e){m\x20t=0;u(e=h(e))<10&&(t=.I),e>=10&&(t=.Z),(e+=t).x(2)}g\x202a(e){m\x20t=0;u(e=h(e))<=10&&(t=.I),e>10&&(t=.Z),(e-=t).x(2)}g\x202b(e){m\x20t=0;u(e=h(e))<5&&(t=.I),e>=5&&e<10&&(t=.Z),e>=10&&e<z&&(t=.1),e>=z&&e<J&&(t=.5),e>=J&&e<E&&(t=1),e>=E&&(t=5),(e+=t).x(2)}g\x202c(e){m\x20t=0;u(e=h(e))<=5&&(t=.I),e>5&&e<=10&&(t=.Z),e>10&&e<=z&&(t=.1),e>z&&e<=J&&(t=.5),e>J&&e<=E&&(t=1),e>E&&(t=5),(e-=t).x(2)}2d\x20k=2e\x201C,X=$(\x22#X\x22),D=$(\x22#D\x22),K=$(\x22#K\x22),N=$(\x22#N\x22),b=$(\x22#b\x22),j=$(\x22#j\x22),T=$(\x22#T\x22);m\x20F=0,v=0,A=0,G=0,11=0,p=0,B=0,H=0,13=0,O=0,14=0,16=0;g\x201L(){k.1D(X.9()),k.1E(D.9()),k.1F(.15),F=h(N.9()),14=h(N.9()),16=h(N.9()),\x22U\x22==j.9()?(v=h(N.9()),A=k.M(v,b.9()),G=k.R(v,b.9()),11=\x2217\x22==K.9()?A-G:A):\x22V\x22==j.9()&&(p=h(N.9()),B=k.M(p,b.9()),H=k.R(p,b.9()),13=\x2217\x22==K.9()?B-H:B,O=k.1e(p,b.9())),18(N.9()),1M(),1N(),2f.2g(\x222h\x22,\x22試算完成\x22)}g\x2018(e){m\x20t=h(e);\x22U\x22==j.9()?(p=h(t),B=k.M(p,b.9()),H=k.R(p,b.9()),13=\x2217\x22==K.9()?B-H:B,O=k.1e(p,b.9())):\x22V\x22==j.9()&&(v=h(t),A=k.M(v,b.9()),G=k.R(v,b.9()),11=\x2217\x22==K.9()?A-G:A);m\x20l=Q(y.S(p*b.9()*w-v*b.9()*w-(A-G+(B-H)+O))),n,r=`\x5cn<c\x201c=\x222i-2j\x20${F==t?\x222k-2l\x22:\x22\x22}\x222m=\x221O(${t})\x22>\x5cn<7\x201k=\x2225%\x22>${q(1f(t))}</7>\x5cn<7\x201k=\x2225%\x22>${q(11+13)}</7>\x5cn<7\x201k=\x2225%\x22>${q(O)}</7>\x5cn<7\x201k=\x2225%\x22>${1g(q(l))}</7>\x5cn</c>\x5cn`;F==t?T.1s(r):\x22U\x22==j.9()&&F!=t?F>t?T.1P(r):F<t&&T.1Q(r):\x22V\x22==j.9()&&F!=t&&(F>t?T.1Q(r):F<t&&T.1P(r))}g\x201O(e){m\x20t=h(e);\x22U\x22==j.9()?(p=h(t),B=k.M(p,b.9()),H=k.R(p,b.9()),13=\x2217\x22==K.9()?B-H:B,O=k.1e(p,b.9())):\x22V\x22==j.9()&&(v=h(t),A=k.M(v,b.9()),G=k.R(v,b.9()),11=\x2217\x22==K.9()?A-G:A);m\x20l=Q(y.S(p*b.9()*w-v*b.9()*w-(A-G+(B-H)+O))),n=(l/y.S(v*b.9()*w)*J).x(2)+\x22%\x22,r=\x222n\x22==j.9()?\x22\x20-\x20回\x20補\x22:\x22\x22;r=`\x5cn<1l\x201c=\x221R\x201b-1S\x221i=\x221T:#1J;1j:#1U\x22>買入${r}</1l>\x5cn<P>\x5cn<c>\x5cn<7>每股價格</7>\x5cn<7>：${q(1f(v))}</7>\x5cn</c>\x5cn<c>\x5cn<7>股數</7>\x5cn<7>：${q(w*b.9())}</7>\x5cn</c>\x5cn<c>\x5cn<7>價金</7>\x5cn<7>：${q(y.S(v*b.9()*w))}</7>\x5cn</c>\x5cn<c>\x5cn<7>手續費</7>\x5cn<7>：${q(11)}</7>\x5cn</c>\x5cn</P>\x5cn`;m\x20i=`\x5cn<1l\x201c=\x221R\x201b-1S\x221i=\x221T:#1K;1j:#1U\x22>賣出</1l>\x5cn<P>\x5cn<c>\x5cn<7>每股價格</7>\x5cn<7>：${q(1f(p))}</7>\x5cn</c>\x5cn<c>\x5cn<7>股數</7>\x5cn<7>：${q(w*b.9())}</7>\x5cn</c>\x5cn<c>\x5cn<7>價金</7>\x5cn<7>：${q(y.S(p*b.9()*w))}</7>\x5cn</c>\x5cn<c>\x5cn<7>手續費</7>\x5cn<7>：${q(13)}</7>\x5cn</c>\x5cn<c>\x5cn<7>證交稅</7>\x5cn<7>：${q(O)}</7>\x5cn</c>\x5cn</P>\x5cn`,o,s=`\x5cn<P>\x5cn\x20${\x222o\x22==K.9()?`\x5cn<c>\x5cn<7>退佣</7>\x5cn<7>：${q(G+H)}</7>\x5cn</c>\x5cn`:\x22\x22}\x5cn<c>\x5cn<7>報酬率</7>\x5cn<7>：${1g(n)}</7>\x5cn</c>\x5cn<c>\x5cn<7>損益</7>\x5cn<7>：${1g(q(l))}</7>\x5cn</c>\x5cn</P>\x5cn`,a=\x22\x22;\x22U\x22==j.9()?a=`\x5cn<P>\x5cn\x20${r}\x5cn<1m/>\x5cn\x20${i}\x5cn<1m/>\x5cn\x20${s}<W/>\x5cn`:\x22V\x22==j.9()&&(a=`\x5cn<P>\x5cn\x20${i}\x5cn<1m/>\x5cn\x20${r}\x5cn<1m/>\x5cn\x20${s}<W/>\x5cn`),$.1t({1u:\x22交易明細\x22,j:\x221v\x22,1w:\x22L-12\x20L-1x-4\x20L-1y-6\x22,1z:a,1A:{1B:{1b:\x22關\x20閉\x22}}})}g\x201M(){1n(\x22U\x22==j.9())1a(i=0;i<3;i++)C=1r(14),14=C,18(C);1V\x201n(\x22V\x22==j.9())1a(i=0;i<3;i++)C=1q(14),14=C,18(C)}g\x201N(){1n(\x22U\x22==j.9())1a(i=0;i<3;i++)C=1q(16),16=C,18(C);1V\x201n(\x22V\x22==j.9())1a(i=0;i<3;i++)C=1r(16),16=C,18(C)}g\x202p(){m\x20e=\x22\x5cn\x20\x20\x20\x20\x20\x20\x20\x20打\x206\x20折請填\x206\x20<W\x20/>\x5cn\x20\x20\x20\x20\x20\x20\x20\x20打\x2028\x20折請填\x202.8\x20<W\x20/>\x5cn\x20\x20\x20\x20\x20\x20\x20\x20以此類推\x20<W\x20/>\x5cn\x20\x20\x20\x20\x22;$.1t({1u:\x22如何填寫?\x22,j:\x221v\x22,1w:\x22L-12\x20L-1x-4\x20L-1y-6\x22,1z:e,1A:{1B:{1b:\x22關\x20閉\x22}}})}g\x202q(){m\x20e=\x22\x5cn\x20\x20\x20\x20\x20\x20\x20\x20日退\x20-\x20手續費會直接扣除折讓金額\x20<W\x20/>\x5cn\x20\x20\x20\x20\x20\x20\x20\x20月退\x20-\x20手續費不會扣除折讓金額，並另外顯示月退金額\x20<W\x20/>\x5cn\x20\x20\x20\x20\x22;$.1t({1u:\x22計算方式?\x22,j:\x221v\x22,1w:\x22L-12\x20L-1x-4\x20L-1y-6\x22,1z:e,1A:{1B:{1b:\x22關\x20閉\x22}}})}g\x202r(){D.9()<=0?$(\x22#1W\x22).1s(\x22提醒：證券商手續費通常最低是1元\x22):$(\x22#1W\x22).1s(\x22\x22)}1L();',0x3e,0x98,_0x184a2b(0x18b)[_0x184a2b(0x185)]('|'),0x0,{})));
+
+const stockCalculator = new StockCalculator();
+const discount = $('#discount');
+const lowestFee = $('#lowestFee');
+const discountType = $('#discountType');
+const price = $('#price');
+const sheet = $('#sheet');
+const type = $('#type');
+const list = $('#list');
+let referencePoint = 0;
+let buyPrice = 0;
+let buyOriginFee = 0;
+let buyDiscount = 0;
+let buyFee = 0;
+
+let sellPrice = 0;
+let sellOriginFee = 0;
+let sellDiscount = 0;
+let sellFee = 0;
+let sellTax = 0;
+
+let topNumber = 0;
+let downNumber = 0;
+
+function search () {
+    stockCalculator.setDiscount(discount.val());
+    stockCalculator.setLowestFee(lowestFee.val());
+    stockCalculator.setTaxPercen(0.15);
+    referencePoint = parseFloat(price.val());
+    topNumber = parseFloat(price.val());
+    downNumber = parseFloat(price.val());
+
+    if (type.val() == 'buy') {
+        buyPrice = parseFloat(price.val());
+        buyOriginFee = stockCalculator.getOriginFee(buyPrice, sheet.val());
+        buyDiscount = stockCalculator.getDiscount(buyPrice, sheet.val());
+        buyFee = (discountType.val() == 'day') ? (buyOriginFee - buyDiscount) : buyOriginFee;
+
+    } else if (type.val() == 'sell') {
+        sellPrice = parseFloat(price.val());
+        sellOriginFee = stockCalculator.getOriginFee(sellPrice, sheet.val());
+        sellDiscount = stockCalculator.getDiscount(sellPrice, sheet.val());
+        sellFee = (discountType.val() == 'day') ? (sellOriginFee - sellDiscount) : sellOriginFee;
+        sellTax = stockCalculator.getTax(sellPrice, sheet.val());
+    }
+    
+    setTable(price.val());
+    showMoreTop();
+    showMoreDown()
+
+    toast.fire('success', '試算完成');
+}
+
+function setTable(price) {
+    let tmpPrice = parseFloat(price);
+    if (type.val() == 'buy') {
+        sellPrice = parseFloat(tmpPrice);
+        sellOriginFee = stockCalculator.getOriginFee(sellPrice, sheet.val());
+        sellDiscount = stockCalculator.getDiscount(sellPrice, sheet.val());
+        sellFee = (discountType.val() == 'day') ? (sellOriginFee - sellDiscount) : sellOriginFee;
+        sellTax = stockCalculator.getTax(sellPrice, sheet.val());
+
+    } else if (type.val() == 'sell') {
+        buyPrice = parseFloat(tmpPrice);
+        buyOriginFee = stockCalculator.getOriginFee(buyPrice, sheet.val());
+        buyDiscount = stockCalculator.getDiscount(buyPrice, sheet.val());
+        buyFee = (discountType.val() == 'day') ? (buyOriginFee - buyDiscount) : buyOriginFee;
+    }
+
+    let balance = parseInt(Math.round((sellPrice * sheet.val() * 1000) - (buyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax)));
+    let bgClass = (referencePoint == tmpPrice) ? 'bg-light' : '';
+
+    let content = `
+        <tr class="curcursor-pointer ${bgClass}" onclick="details(${tmpPrice})">
+            <td width="25%">${formatNumber(formatPoint(tmpPrice))}</td>
+            <td width="25%">${formatNumber(buyFee + sellFee)}</td>
+            <td width="25%">${formatNumber(sellTax)}</td>
+            <td width="25%">${coloring(formatNumber(balance))}</td>
+        </tr>
+    `;
+
+    if (referencePoint == tmpPrice) {
+        list.html(content);
+    } else if (type.val() == 'buy' && referencePoint != tmpPrice) {
+        if (referencePoint > tmpPrice) {
+            list.prepend(content);
+        } else if (referencePoint < tmpPrice) {
+            list.append(content);
+        }
+    } else if (type.val() == 'sell' && referencePoint != tmpPrice) {
+        if (referencePoint > tmpPrice) {
+            list.append(content);
+        } else if (referencePoint < tmpPrice) {
+            list.prepend(content);
+        }
+    }
+}
+
+function details(price) {
+    let tmpPrice = parseFloat(price);
+    if (type.val() == 'buy') {
+        sellPrice = parseFloat(tmpPrice);
+        sellOriginFee = stockCalculator.getOriginFee(sellPrice, sheet.val());
+        sellDiscount = stockCalculator.getDiscount(sellPrice, sheet.val());
+        sellFee = (discountType.val() == 'day') ? (sellOriginFee - sellDiscount) : sellOriginFee;
+        sellTax = stockCalculator.getTax(sellPrice, sheet.val());
+    } else if (type.val() == 'sell') {
+        buyPrice = parseFloat(tmpPrice);
+        buyOriginFee = stockCalculator.getOriginFee(buyPrice, sheet.val());
+        buyDiscount = stockCalculator.getDiscount(buyPrice, sheet.val());
+        buyFee = (discountType.val() == 'day') ? (buyOriginFee - buyDiscount) : buyOriginFee;
+    }
+
+    let balance = parseInt(Math.round((sellPrice * sheet.val() * 1000) - (buyPrice * sheet.val() * 1000) - ((buyOriginFee - buyDiscount) + (sellOriginFee - sellDiscount) + sellTax)));
+    let rate = ((balance / Math.round(buyPrice * sheet.val() * 1000)) * 100).toFixed(2) + "%";
+
+    let buyDetails = (type.val() == 'dayTradingSell') ? ' - 回 補' : '';
+    buyDetails = `
+        <div class="rounded text-center" style="background:#dc3545;color:#fff">買 入${buyDetails}</div>
+        <table>
+            <tr>
+                <td>每股價格</td>
+                <td>：${formatNumber(formatPoint(buyPrice))}</td>
+            </tr>
+            <tr>
+                <td>股數</td>
+                <td>：${formatNumber(sheet.val() * 1000)}</td>
+            </tr>
+            <tr>
+                <td>價金</td>
+                <td>：${formatNumber(Math.round(buyPrice * sheet.val() * 1000))}</td>
+            </tr>
+            <tr>
+                <td>手續費</td>
+                <td>：${formatNumber(buyFee)}</td>
+            </tr>
+        </table>
+    `;
+    let sellDetails = `
+        <div class="rounded text-center" style="background:#28a745;color:#fff">賣 出</div>
+        <table>
+            <tr>
+                <td>每股價格</td>
+                <td>：${formatNumber(formatPoint(sellPrice))}</td>
+            </tr>
+            <tr>
+                <td>股數</td>
+                <td>：${formatNumber(sheet.val() * 1000)}</td>
+            </tr>
+            <tr>
+                <td>價金</td>
+                <td>：${formatNumber(Math.round(sellPrice * sheet.val() * 1000))}</td>
+            </tr>
+            <tr>
+                <td>手續費</td>
+                <td>：${formatNumber(sellFee)}</td>
+            </tr>
+            <tr>
+                <td>證交稅</td>
+                <td>：${formatNumber(sellTax)}</td>
+            </tr>
+        </table>
+    `;
+
+    let monthDiscount = (discountType.val() == 'month') ? `
+        <tr>
+            <td>退佣</td>
+            <td>：${formatNumber(buyDiscount + sellDiscount)}</td>
+        </tr>
+    ` : '';
+    let balanceDetails = `
+        <table>
+            ${monthDiscount}
+            <tr>
+                <td>報酬率</td>
+                <td>：${coloring(rate)}</td>
+            </tr>
+            <tr>
+                <td>損益</td>
+                <td>：${coloring(formatNumber(balance))}</td>
+            </tr>
+        </table>
+    `;
+
+    let content = '';
+    if (type.val() == 'buy') {
+        content = `
+            <table>
+            ${buyDetails}
+            <hr />
+            ${sellDetails}
+            <hr />
+            ${balanceDetails} <br />
+        `;
+    } else if (type.val() == 'sell') {
+        content = `
+            <table>
+            ${sellDetails}
+            <hr />
+            ${buyDetails}
+            <hr />
+            ${balanceDetails} <br />
+        `;
+    }
+
+    $.confirm({
+        title: '交易明細',
+        type: 'blue',
+        columnClass: 'col-12 col-lg-4 col-md-6',
+        content: content,
+        buttons: {
+            cancel: {
+                text: '關 閉',
+            }
+        }
+    });
+}
+
+function showMoreTop() {
+    if (type.val() == 'buy') {
+        for (i = 0 ; i < 3 ; i ++) {
+            tmpPrice = downTick(topNumber);
+            topNumber = tmpPrice;
+            setTable(tmpPrice);
+        }
+    } else if (type.val() == 'sell') {
+        for (i = 0 ; i < 3 ; i ++) {
+            tmpPrice = upTick(topNumber);
+            topNumber = tmpPrice;
+            setTable(tmpPrice);
+        }
+    }
+}
+
+function showMoreDown() {
+    if (type.val() == 'buy') {
+        for (i = 0 ; i < 3 ; i ++) {
+            tmpPrice = upTick(downNumber);
+            downNumber = tmpPrice;
+            setTable(tmpPrice);
+        }
+    } else if (type.val() == 'sell') {
+        for (i = 0 ; i < 3 ; i ++) {
+            tmpPrice = downTick(downNumber);
+            downNumber = tmpPrice;
+            setTable(tmpPrice);
+        }
+    }
+}
+
+function discountQuestion () {
+    let content = `
+        打 6 折請填 6 <br />
+        打 28 折請填 2.8 <br />
+        以此類推 <br />
+    `;
+    $.confirm({
+        title: '如何填寫?',
+        type: 'blue',
+        columnClass: 'col-12 col-lg-4 col-md-6',
+        content: content,
+        buttons: {
+            cancel: {
+                text: '關 閉',
+            }
+        }
+    });
+}
+
+function discountTypeQuestion () {
+    let content = `
+        日退 - 手續費會直接扣除折讓金額 <br />
+        月退 - 手續費不會扣除折讓金額，並另外顯示月退金額 <br />
+    `;
+    $.confirm({
+        title: '計算方式?',
+        type: 'blue',
+        columnClass: 'col-12 col-lg-4 col-md-6',
+        content: content,
+        buttons: {
+            cancel: {
+                text: '關 閉',
+            }
+        }
+    });
+}
+
+function lowestFeeChange () {
+    if (lowestFee.val() <= 0) {
+        $('#lowestFeeAlert').html('提醒：證券商手續費通常最低是1元')
+    } else {
+        $('#lowestFeeAlert').html('')
+    }
+}
+
+search();

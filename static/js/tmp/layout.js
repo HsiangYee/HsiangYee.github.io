@@ -1,6 +1,6 @@
 /*********************************************************************
- * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
- * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ * Copyright © 2020 - 2022 HsiangYee All Rights Reserved.
+ * 著作權 © 2020 - 2022 HsiangYee 版權所有
  * 非經同意不得翻印轉載或以任何方式重製，以免侵犯臺灣智慧財產權須負責刑法與民法
  * 君子請自重 勿淪為小人，請勿以身試法，留下前科
  *********************************************************************/
@@ -33,13 +33,13 @@ const menuContent = `
                 <li class="nav-item">
                     <a href="views/roi.html" title="股市計算機 | 報酬率快速算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>報酬率快速算 <span class="text-danger"><small>新增零股</small></span></p>
+                        <p>報酬率快速算 <span class="text-danger"><small></small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="views/balance.html" title="股市計算機 | 損益平衡試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>損益平衡試算 <span class="text-danger"><small>新增零股</small></span></p>
+                        <p>損益平衡試算 <span class="text-danger"><small></small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -57,13 +57,13 @@ const menuContent = `
                 <li class="nav-item">
                     <a href="views/ETF.html" title="股市計算機 | ETF 試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>ETF 試算 <span class="text-danger"><small>新功能</small></span></p>
+                        <p>ETF 試算 <span class="text-danger"><small></small></span></p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="views/warrant.html" title="股市計算機 | 權證試算" class="nav-link">
                         <i class="fas fa-calculator custom-icon"></i>
-                        <p>權證試算 <span class="text-danger"><small>新功能</small></span></p>
+                        <p>權證試算 <span class="text-danger"><small></small></span></p>
                     </a>
                 </li>
                 <li class="nav-header">網站資訊</li>

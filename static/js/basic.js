@@ -1,6 +1,6 @@
 /*********************************************************************
- * Copyright © 2020 - 2021 HsiangYee All Rights Reserved.
- * 著作權 © 2020 - 2021 HsiangYee 版權所有
+ * Copyright © 2020 - 2022 HsiangYee All Rights Reserved.
+ * 著作權 © 2020 - 2022 HsiangYee 版權所有
  * 非經同意不得翻印轉載或以任何方式重製，以免侵犯臺灣智慧財產權須負責刑法與民法
  * 君子請自重 勿淪為小人，請勿以身試法，留下前科
  *********************************************************************/
@@ -74,5 +74,5 @@ function coffee () {
     });
 }
 
-let likeButtonLink = "https://button.like.co/in/embed/jameshsiang/button?referrer=" + window.location.href;
-$('#likeButton').attr('src', likeButtonLink)
+// let likeButtonLink = "https://button.like.co/in/embed/jameshsiang/button?referrer=" + window.location.href;
+// $('#likeButton').attr('src', likeButtonLink)
