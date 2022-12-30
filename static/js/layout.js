@@ -20,8 +20,6 @@ const menuContent = `
             <span class="brand-text font-weight-light">股市計算機</span>
         </div>
 
-        asd
-
         <div class="sidebar">
         <nav class="mt-2" id="menu">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
