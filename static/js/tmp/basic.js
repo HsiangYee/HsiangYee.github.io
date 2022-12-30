@@ -33,10 +33,10 @@ function copy(object) {
 function share () {
     let content = `
         <a target="_blank" title="股市計算機 | Line 分享" href="https://social-plugins.line.me/lineit/share?url=https://bit.ly/3bJazUl" class="btn btn-sm btn-success w-100 py-2 my-1">
-            分享到 LINE &nbsp;&nbsp;&nbsp;&nbsp;<img src="static/images/line-icon.png" style="width:20px">
+            分享到 LINE &nbsp;&nbsp;&nbsp;&nbsp;<img src="../static/images/line-icon.png" style="width:20px">
         </a>
         <a target="_blank" title="股市計算機 | FB 分享" href="https://www.facebook.com/sharer/sharer.php?u=https://bit.ly/2OT7I1T" class="btn btn-sm btn-primary w-100 py-2 my-1">
-            分享到 FB &nbsp;&nbsp;&nbsp;&nbsp;<img src="static/images/fb-icon.png" style="width:20px">
+            分享到 FB &nbsp;&nbsp;&nbsp;&nbsp;<img src="../static/images/fb-icon.png" style="width:20px">
         </a>
         <button onclick="copy(this)" class="btn btn-sm btn-info w-100 border py-2 my-1" value="https://bit.ly/3bH6tMs">
             複製網址
@@ -74,5 +74,5 @@ function coffee () {
     });
 }
 
-let likeButtonLink = "https://button.like.co/in/embed/jameshsiang/button?referrer=" + window.location.href;
-$('#likeButton').attr('src', likeButtonLink)
+// let likeButtonLink = "https://button.like.co/in/embed/jameshsiang/button?referrer=" + window.location.href;
+// $('#likeButton').attr('src', likeButtonLink)

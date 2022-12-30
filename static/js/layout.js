@@ -132,7 +132,15 @@ $.confirm({
     title: '',
     type: 'blue',
     columnClass: 'col-12 col-lg-4 col-md-6',
-    content: ADcontent[ADnumber]['content'],
+    content: ADcontent[ADnumber]['content'] + `<div>
+            <amp-ad width="100vw" height="320"
+            type="adsense"
+            data-ad-client="ca-pub-8969180932862200"
+            data-ad-slot="3744963457"
+            data-auto-format="rspv"
+            data-full-width="">
+            <div overflow=""></div>
+        </amp-ad></div>`,
     buttons: {
         cancel: {
             text: '沒 興 趣',
