@@ -20,6 +20,8 @@ const menuContent = `
             <span class="brand-text font-weight-light">股市計算機</span>
         </div>
 
+        asd
+
         <div class="sidebar">
         <nav class="mt-2" id="menu">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -132,15 +134,18 @@ $.confirm({
     title: '',
     type: 'blue',
     columnClass: 'col-12 col-lg-4 col-md-6',
-    content: ADcontent[ADnumber]['content'] + `<div>
-            <amp-ad width="100vw" height="320"
-            type="adsense"
-            data-ad-client="ca-pub-8969180932862200"
-            data-ad-slot="3744963457"
-            data-auto-format="rspv"
-            data-full-width="">
-            <div overflow=""></div>
-        </amp-ad></div>`,
+    content: ADcontent[ADnumber]['content'] + `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8969180932862200"
+    crossorigin="anonymous"></script>
+<!-- show -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-8969180932862200"
+    data-ad-slot="3744963457"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>`,
     buttons: {
         cancel: {
             text: '沒 興 趣',
