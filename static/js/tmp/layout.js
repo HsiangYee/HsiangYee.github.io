@@ -142,7 +142,7 @@ ADnumber = getRandom(0, 2)
 $.confirm({
     title: '',
     type: 'blue',
-    columnClass: 'col-12 col-lg-4 col-md-6',
+    columnClass: 'col-12 col-lg-4 col-md-6 p-3',
     content: ADcontent[ADnumber]['content'] + `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8969180932862200"
     crossorigin="anonymous"></script>
 <!-- show -->
