@@ -82,6 +82,17 @@ const menuContent = `
                 </li> -->
             </ul>
         </nav>
+
+        <!-- navbar -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-8969180932862200"
+            data-ad-slot="9837343480"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </aside> 
 `;
 
@@ -131,7 +142,7 @@ ADnumber = getRandom(0, 2)
 $.confirm({
     title: '',
     type: 'blue',
-    columnClass: 'col-12 col-lg-4 col-md-6',
+    columnClass: 'col-12 col-lg-4 col-md-6 overflow-scroll',
     content: ADcontent[ADnumber]['content'] + `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8969180932862200"
     crossorigin="anonymous"></script>
 <!-- show -->
