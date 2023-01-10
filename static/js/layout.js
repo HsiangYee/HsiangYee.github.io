@@ -24,58 +24,58 @@ const menuContent = `
             <nav class="mt-2" id="menu">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <li class="nav-item">
-                        <a href="index.html" title="股市計算機 | 首頁" class="nav-link">
+                        <a href="/views/index.html" title="股市計算機 | 首頁" class="nav-link">
                             <i class="fas fa-home custom-icon"></i>
                             <p>首頁</p>
                         </a>
                     </li>
                     <li class="nav-header">功能</li>
                     <li class="nav-item">
-                        <a href="roi.html" title="股市計算機 | 報酬率快速算" class="nav-link">
+                        <a href="/views/roi.html" title="股市計算機 | 報酬率快速算" class="nav-link">
                             <i class="fas fa-calculator custom-icon"></i>
                             <p>報酬率快速算 <span class="text-danger"><small></small></span></p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="balance.html" title="股市計算機 | 損益平衡試算" class="nav-link">
+                        <a href="/views/balance.html" title="股市計算機 | 損益平衡試算" class="nav-link">
                             <i class="fas fa-calculator custom-icon"></i>
                             <p>損益平衡試算 <span class="text-danger"><small></small></span></p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="dayTrading.html" title="股市計算機 | 現股當沖試算" class="nav-link">
+                        <a href="/views/dayTrading.html" title="股市計算機 | 現股當沖試算" class="nav-link">
                             <i class="fas fa-calculator custom-icon"></i>
                             <p>現股當沖試算</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="dayTradingMini.html" title="股市計算機 | 現股當沖試算(Mini)" class="nav-link">
+                        <a href="/views/dayTradingMini.html" title="股市計算機 | 現股當沖試算(Mini)" class="nav-link">
                             <i class="fas fa-calculator custom-icon"></i>
                             <p>現股當沖試算(Mini)</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="ETF.html" title="股市計算機 | ETF 試算" class="nav-link">
+                        <a href="/views/ETF.html" title="股市計算機 | ETF 試算" class="nav-link">
                             <i class="fas fa-calculator custom-icon"></i>
                             <p>ETF 試算 <span class="text-danger"><small></small></span></p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="warrant.html" title="股市計算機 | 權證試算" class="nav-link">
+                        <a href="/views/warrant.html" title="股市計算機 | 權證試算" class="nav-link">
                             <i class="fas fa-calculator custom-icon"></i>
                             <p>權證試算 <span class="text-danger"><small></small></span></p>
                         </a>
                     </li>
                     <li class="nav-header">網站資訊</li>
                     <li class="nav-item">
-                        <a href="question.html" title="股市計算機 | 常見問題" class="nav-link">
+                        <a href="/views/question.html" title="股市計算機 | 常見問題" class="nav-link">
                         <i class="fas fa-question custom-icon"></i>
                             <p>常見問題</p>
                         </a>
                     </li>
                     <!--
                     <li class="nav-item">
-                        <a href="author.html" title="股市計算機 | 關於作者 & 網站" class="nav-link">
+                        <a href="/views/author.html" title="股市計算機 | 關於作者 & 網站" class="nav-link">
                             <i class="far fa-user-circle custom-icon"></i>
                             <p>關於作者 & 網站</p>
                         </a>
@@ -137,13 +137,25 @@ ADcontent = [
                     `,
         'url': 'https://tinyurl.com/2q7rd9aa'
     },
+
+    {
+        'content': `<div class="text-center" style="line-height:36px;">
+                        <H4><B>廣告版位出租</B></h4>
+                    </div>
+
+                    <span style="font-size:18px;">
+                        有意者可寄信 admin@stock-calculator.net 洽詢
+                    </span>
+                    `,
+        'url': ''
+    },
 ];
 
 ADnumber = getRandom(0, 2)
 $.confirm({
     title: '',
     type: 'blue',
-    columnClass: 'col-12 col-lg-4 col-md-6',
+    columnClass: 'col-12 col-lg-4 col-md-6 p-3 overflow-scroll',
     content: ADcontent[ADnumber]['content'],
     buttons: {
         cancel: {

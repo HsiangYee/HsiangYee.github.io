@@ -137,6 +137,18 @@ ADcontent = [
                     `,
         'url': 'https://tinyurl.com/2q7rd9aa'
     },
+
+    {
+        'content': `<div class="text-center" style="line-height:36px;">
+                        <H4><B>廣告版位出租</B></h4>
+                    </div>
+
+                    <span style="font-size:18px;">
+                        有意者可寄信 admin@stock-calculator.net 洽詢
+                    </span>
+                    `,
+        'url': ''
+    },
 ];
 
 ADnumber = getRandom(0, 2)
