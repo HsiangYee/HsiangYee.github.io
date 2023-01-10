@@ -143,8 +143,8 @@ ADcontent = [
                         <H4><B>廣告版位出租</B></h4>
                     </div>
 
-                    <span style="font-size:18px;">
-                        有意者可寄信 admin@stock-calculator.net 洽詢
+                    <span style="font-size:18px;text-align:center">
+                        有意者可寄信至 <br /> admin@stock-calculator.net
                     </span>
                     `,
         'url': ''
