@@ -151,7 +151,7 @@ ADcontent = [
     },
 ];
 
-ADnumber = getRandom(0, 2)
+ADnumber = getRandom(0, 3)
 $.confirm({
     title: '',
     type: 'blue',
