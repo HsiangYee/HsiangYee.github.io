@@ -116,46 +116,25 @@ function getRandom(min,max){
 
 ADcontent = [
     {
-        'content': `<img src="../static/images/股票道場.jpg" width="100%" style="border-radius:10px"> <br /><br />
-                    <ul style="line-height:30px">
-                        <li>將操盤職人的技術刻在腦海中並將之重現</li>
-                        <li>簡單易懂的手法初學者也可以輕鬆使用</li>
-                        <li>不僅是知識更教您將知識實踐的行動力</li>
-                        <li>鎖定窄範圍且深度的學習 讓財富自由離你我更近</li>
-                    </ul>`,
-        'url': 'https://tinyurl.com/2kt8lv7z'
-    },
-
-    {
-        'content': `<div class="text-center" style="line-height:36px;">
-                        <H4><B>量價操盤術</B></h4>
+        'content': `<div style="line-height:26px;">
+                        <H4><B>股市計算機 - 訂閱制贊助計畫問卷</B></h4>
                     </div>
 
-                    <span style="font-size:18px;">
-                    擁有高質量的操盤課程，讓初學者的你快速掌握股票高勝率秘訣
+                    <span style="font-size:16px;">
+                        大家好~ 我是股市計算機網站的作者 James <br />
+                        股市計算機從 2021 年上線至今至今已經累計超過 240 萬次的瀏覽次數，也獲得大量的好評。 <br />
+                        而近期正在規劃新的計畫，為了給予大家更好的網站使用體驗，需要收集各位使用者的意見，謝謝您抽空填寫問卷!
                     </span>
                     `,
-        'url': 'https://tinyurl.com/2q7rd9aa'
-    },
-
-    {
-        'content': `<div class="text-center" style="line-height:36px;">
-                        <H4><B>廣告版位出租</B></h4>
-                    </div>
-
-                    <span style="font-size:18px;text-align:center">
-                        有意者可寄信至 <br /> admin@stock-calculator.net
-                    </span>
-                    `,
-        'url': ''
+        'url': 'https://forms.gle/qfL9XuetkQDwLyaX6'
     },
 ];
 
-ADnumber = getRandom(0, 3)
+ADnumber = getRandom(0, 0)
 $.confirm({
     title: '',
     type: 'blue',
-    columnClass: 'col-12 col-lg-4 col-md-6 p-3 overflow-scroll',
+    columnClass: 'col-12 col-lg-6 col-md-6 p-3 overflow-scroll',
     content: ADcontent[ADnumber]['content'],
     buttons: {
         cancel: {
