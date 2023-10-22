@@ -66,6 +66,13 @@ const menuContent = `
                             <p>權證試算 <span class="text-danger"><small></small></span></p>
                         </a>
                     </li>
+                    <li class="nav-header">策略販售</li>
+                    <li class="nav-item">
+                        <a href="/views/strategy.html" title="股市計算機 | 策略販售" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                            <p>策略販售</p>
+                        </a>
+                    </li>
                     <li class="nav-header">網站資訊</li>
                     <li class="nav-item">
                         <a href="/views/question.html" title="股市計算機 | 常見問題" class="nav-link">
