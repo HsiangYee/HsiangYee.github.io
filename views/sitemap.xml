@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-        <loc>https://stock-calculator.net</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/index.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/index.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/index.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/index.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/index.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/views/index.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/dayTrading.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/views/dayTrading.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/dayTradingMini.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/views/dayTradingMini.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/balance.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/views/balance.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/roi.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/views/roi.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/ETF.html</loc>
-        <lastmod>2021-05-02</lastmod>
+        <loc>https://old.stock-calculator.net/views/ETF.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/warrant.html</loc>
-        <lastmod>2021-05-02</lastmod>
+        <loc>https://old.stock-calculator.net/views/warrant.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/question.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/views/question.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://stock-calculator.net/views/author.html</loc>
-        <lastmod>2021-03-05</lastmod>
+        <loc>https://old.stock-calculator.net/views/author.html</loc>
+        <lastmod>2024-01-02</lastmod>
         <priority>0.9</priority>
     </url>
 </urlset>
