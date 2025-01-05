@@ -116,7 +116,7 @@ function getRandom(min, max) {
 
 ADcontent = [
     {
-        'content': `<div class="text-center" style="line-height:36px;">
+        'content': `<div style="line-height:36px;">
                         <H4><B>全新 2025 股市計算機 全新上線</B></h4>
                     </div>
 
