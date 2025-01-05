@@ -127,7 +127,7 @@ ADcontent = [
                         在這邊作者邀請大家來體驗看看，並且提供一些寶貴的意見，讓我們一起打造更好的股市計算機。
                     </span>
                     `,
-        'url': 'https://forms.gle/qfL9XuetkQDwLyaX6'
+        'url': 'https://stock-calculator.net'
     },
 ];
 
