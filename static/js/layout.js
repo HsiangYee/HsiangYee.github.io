@@ -66,13 +66,6 @@ const menuContent = `
                             <p>權證試算 <span class="text-danger"><small></small></span></p>
                         </a>
                     </li>
-                    <li class="nav-header">策略販售</li>
-                    <li class="nav-item">
-                        <a href="/views/strategy.html" title="股市計算機 | 策略販售" class="nav-link">
-                        <i class="fas fa-shopping-cart"></i>
-                            <p>策略販售</p>
-                        </a>
-                    </li>
                     <li class="nav-header">網站資訊</li>
                     <li class="nav-item">
                         <a href="/views/question.html" title="股市計算機 | 常見問題" class="nav-link">
@@ -124,13 +117,14 @@ function getRandom(min,max){
 ADcontent = [
     {
         'content': `<div style="line-height:26px;">
-                        <H4><B>股市計算機 - 訂閱制贊助計畫問卷</B></h4>
+                        <H4><B>全新 2025 股市計算機 全新上線</B></h4>
                     </div>
 
                     <span style="font-size:16px;">
                         大家好~ 我是股市計算機網站的作者 James <br />
-                        股市計算機從 2021 年上線至今至今已經累計超過 240 萬次的瀏覽次數，也獲得大量的好評。 <br />
-                        而近期正在規劃新的計畫，為了給予大家更好的網站使用體驗，需要收集各位使用者的意見，謝謝您抽空填寫問卷!
+                        股市計算機已經在 2025 年全新改版，新增了許多實用的功能，並且將網站改版成更現代化的樣式。
+                        更簡潔更容易操作，且具備裝置儲存功能，與自定義表格等多種新功能。
+                        在這邊作者邀請大家來體驗看看，並且提供一些寶貴的意見，讓我們一起打造更好的股市計算機。
                     </span>
                     `,
         'url': 'https://forms.gle/qfL9XuetkQDwLyaX6'

@@ -105,50 +105,29 @@ const shareHTML = `
     </div>
 `;
 
-$(document).ready(function (){
+$(document).ready(function () {
     menuAndNavbar.html(menuContent);
     content.append(shareHTML);
 });
 
-function getRandom(min,max){
-    return Math.floor(Math.random()*max)+min;
+function getRandom(min, max) {
+    return Math.floor(Math.random() * max) + min;
 };
 
 ADcontent = [
     {
-        'content': `<img src="../static/images/股票道場.jpg" width="100%" style="border-radius:10px"> <br /><br />
-                    <ul style="line-height:30px">
-                        <li>將操盤職人的技術刻在腦海中並將之重現</li>
-                        <li>簡單易懂的手法初學者也可以輕鬆使用</li>
-                        <li>不僅是知識更教您將知識實踐的行動力</li>
-                        <li>鎖定窄範圍且深度的學習 讓財富自由離你我更近</li>
-                    </ul>`,
-        'url': 'https://tinyurl.com/2kt8lv7z'
-    },
-
-    {
         'content': `<div class="text-center" style="line-height:36px;">
-                        <H4><B>量價操盤術</B></h4>
+                        <H4><B>全新 2025 股市計算機 全新上線</B></h4>
                     </div>
 
                     <span style="font-size:18px;">
-                    擁有高質量的操盤課程，讓初學者的你快速掌握股票高勝率秘訣
+                        全新 2025 股市計算機 全新上線，新增了許多實用的功能，並且將網站改版成更現代化的樣式。
+                        更簡潔更容易操作，且具備裝置儲存功能，與自定義表格等多種新功能。
+                        在這邊作者邀請大家來體驗看看，並且提供一些寶貴的意見，讓我們一起打造更好的股市計算機。
                     </span>
                     `,
-        'url': 'https://tinyurl.com/2q7rd9aa'
-    },
-
-    {
-        'content': `<div class="text-center" style="line-height:36px;">
-                        <H4><B>廣告版位出租</B></h4>
-                    </div>
-
-                    <span style="font-size:18px;text-align:center">
-                        有意者可寄信至 <br /> admin@stock-calculator.net
-                    </span>
-                    `,
-        'url': ''
-    },
+        'url': 'https://stock-calculator.net'
+    }
 ];
 
 ADnumber = getRandom(0, 3)
@@ -164,7 +143,7 @@ $.confirm({
         sure: {
             text: '我 有 興 趣',
             btnClass: 'btn-primary',
-            action: function() {
+            action: function () {
                 window.open(ADcontent[ADnumber]['url'], '_blank');
             },
         }
