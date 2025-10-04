@@ -131,21 +131,21 @@ ADcontent = [
 ];
 
 ADnumber = getRandom(0, 3)
-$.confirm({
-    title: '',
-    type: 'blue',
-    columnClass: 'col-12 col-lg-4 col-md-6 p-3 overflow-scroll',
-    content: ADcontent[ADnumber]['content'],
-    buttons: {
-        cancel: {
-            text: '沒 興 趣',
-        },
-        sure: {
-            text: '我 有 興 趣',
-            btnClass: 'btn-primary',
-            action: function () {
-                window.open(ADcontent[ADnumber]['url'], '_blank');
-            },
-        }
-    }
-});
+// $.confirm({
+//     title: '',
+//     type: 'blue',
+//     columnClass: 'col-12 col-lg-4 col-md-6 p-3 overflow-scroll',
+//     content: ADcontent[ADnumber]['content'],
+//     buttons: {
+//         cancel: {
+//             text: '沒 興 趣',
+//         },
+//         sure: {
+//             text: '我 有 興 趣',
+//             btnClass: 'btn-primary',
+//             action: function () {
+//                 window.open(ADcontent[ADnumber]['url'], '_blank');
+//             },
+//         }
+//     }
+// });
